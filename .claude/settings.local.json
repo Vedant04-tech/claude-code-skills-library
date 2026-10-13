@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"c:/Users/Admin/Documents/My Claude-Antigravity-AI projects folder/Skills Main Folder\" && mkdir -p .claude/skills .claude/agents && echo \"✓ Created .claude/skills and .claude/agents\")",
+      "Bash(cp -r vendor/claude-memory/skills/capture memory-temp/)",
+      "Bash(cp -r vendor/claude-memory/skills/cloud-recall memory-temp/)",
+      "Bash(cp -r vendor/claude-memory/skills/session-end memory-temp/)",
+      "Bash(cp -r vendor/claude-memory/skills/session-start memory-temp/)",
+      "Bash(mv memory-temp/capture .claude/skills/memory-capture)",
+      "Bash(mv memory-temp/cloud-recall .claude/skills/memory-cloud-recall)",
+      "Bash(mv memory-temp/session-end .claude/skills/memory-session-end)",
+      "Bash(mv memory-temp/session-start .claude/skills/memory-session-start)",
+      "Bash(cp -r superpowers vendor/)",
+      "Bash(cp -r awesome-claude-code vendor/)",
+      "Skill(fewer-permission-prompts)",
+      "Bash(node *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Admin\\Documents\\My Claude-Antigravity-AI projects folder\\Skills Main Folder\\.claude"
+    ]
+  },
+  "disabledMcpjsonServers": [
+    "context7",
+    "playwright",
+    "filesystem",
+    "memory",
+    "fetch"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "claude-code-skills-library",
+  "version": "1.0.0",
+  "description": "Production-tested agency automation skills library, subagents, workflow blueprints, and persistent memory system for Claude Code & AI agents.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vedant04-tech/claude-code-skills-library.git"
+  },
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "ai-agents",
+    "automation",
+    "lead-generation",
+    "superpowers",
+    "mcp",
+    "agency-automation",
+    "nextjs",
+    "design-engineering"
+  ],
+  "author": "Vedant04-tech",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "agentation": "^3.0.2"
+  }
+}

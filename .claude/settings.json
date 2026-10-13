@@ -1,0 +1,63 @@
+{
+  "plugins": {
+    "marketplaces": {
+      "anthropics": {
+        "url": "https://registry.anthropic.com/anthropics/skills",
+        "enabled": true,
+        "note": "Official Anthropic skills (skill-creator, mcp-builder, webapp-testing, web-artifacts-builder)"
+      },
+      "superpowers": {
+        "url": "https://registry.anthropic.com/obra/superpowers-marketplace",
+        "enabled": true,
+        "note": "TDD/planning/debugging discipline framework by Jesse Vincent (257k stars)"
+      },
+      "vercel": {
+        "url": "https://registry.anthropic.com/vercel-labs/agent-skills",
+        "enabled": false,
+        "note": "Use npx skills CLI instead: npx skills add vercel-labs/agent-skills --skill <name>"
+      },
+      "wshobson": {
+        "url": "https://registry.anthropic.com/wshobson/agents",
+        "enabled": false,
+        "note": "Large repository (185+ skills); install specific skills via npx"
+      },
+      "alirezarezvani": {
+        "url": "https://registry.anthropic.com/alirezarezvani/claude-skills",
+        "enabled": false,
+        "note": "ML/MLOps skills; install via /plugin marketplace add alirezarezvani/claude-skills"
+      }
+    }
+  },
+  "mcpServers": {
+    "context7": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    },
+    "playwright": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "filesystem": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\Admin\\Documents\\My Claude-Antigravity-AI projects folder"]
+    },
+    "memory": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "fetch": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "mcp-fetch-server"]
+    }
+  },
+  "notes": {
+    "setup": "After installing plugins, run 'claude' to verify skills load automatically.",
+    "memory": "Memory skills require vendor/claude-memory/install.sh to be run separately and Supabase config.",
+    "docs": "See docs/skill-sources.md for installation instructions for each recommended skill."
+  }
+}
