@@ -16,6 +16,7 @@ Configured in [`.mcp.json`](../.mcp.json) and [`.claude/settings.json`](../.clau
 | **`filesystem`** | `@modelcontextprotocol/server-filesystem` | Scoped, permission-controlled filesystem read/write | None | Active ✓ |
 | **`memory`** | `@modelcontextprotocol/server-memory` | Local entity-relationship knowledge graph memory | None | Active ✓ |
 | **`fetch`** | `mcp-fetch-server` | URL content fetching and Markdown conversion | None | Active ✓ |
+| **`headroom`** | `headroom mcp serve` | Local context compression, CCR, and cache alignment | `pip install "headroom-ai[mcp]"` | Optional / Ready |
 
 ---
 

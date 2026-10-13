@@ -74,6 +74,12 @@
       "enabled": true,
       "command": "npx",
       "args": ["-y", "mcp-fetch-server"]
+    },
+    "headroom": {
+      "enabled": false,
+      "command": "headroom",
+      "args": ["mcp", "serve"],
+      "note": "Optional: local-first prompt compression and cache alignment (requires: pip install 'headroom-ai[mcp]')"
     }
   },
   "notes": {
