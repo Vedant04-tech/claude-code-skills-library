@@ -1,14 +1,25 @@
-# ⚡ Claude Code Skills Library & Agency Automation Framework
+# ⚡ Claude Code Skills Library & Cross-Agent Engineering Toolkit
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-6366f1?style=for-the-badge&logo=anthropic)](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
-[![Skills Count](https://img.shields.io/badge/Production%20Skills-53%2B-10b981?style=for-the-badge)](https://github.com/Vedant04-tech/claude-code-skills-library)
+[![Antigravity](https://img.shields.io/badge/Antigravity-100%25%20Parity-4285f4?style=for-the-badge)](https://github.com/Vedant04-tech/claude-code-skills-library)
+[![Skills Count](https://img.shields.io/badge/Production%20Skills-71%20Verified-10b981?style=for-the-badge)](docs/skill-catalog.md)
 [![Subagents](https://img.shields.io/badge/Specialized%20Subagents-4-f59e0b?style=for-the-badge)](https://github.com/Vedant04-tech/claude-code-skills-library)
-[![MCP Enabled](https://img.shields.io/badge/MCP%20Servers-5%20Bundled-8b5cf6?style=for-the-badge)](https://modelcontextprotocol.io)
+[![MCP Enabled](https://img.shields.io/badge/MCP%20Servers-5%20Bundled-8b5cf6?style=for-the-badge)](docs/plugin-catalog.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-> **A battle-tested agency automation skills library, autonomous subagents, workflow blueprints, and persistent memory architecture for Claude Code and AI agents.**
+> **A curated, battle-tested agency automation and engineering skills library with 100% parity across Claude Code, Google Antigravity, Cursor, and Codex.**
 
-This repository serves as a turnkey, production-ready template for AI-assisted development and agency automation. Built for **Claude Code**, **Google Antigravity**, **Cursor**, and **Agentic IDEs**, it packages **53 auto-discovered skills**, 4 high-focus subagents, 3 turnkey pipeline blueprints, 5 Model Context Protocol (MCP) servers, and third-party frameworks.
+This repository serves as a turnkey, production-ready engineering toolkit. Built and maintained for **Claude Code**, **Google Antigravity**, and **Agentic IDEs**, it packages **71 verified skills**, 4 high-focus subagents, 3 turnkey pipeline blueprints, 5 Model Context Protocol (MCP) servers, official Anthropic meta-skills, and Jesse Vincent's Superpowers v6.1.1 discipline framework.
+
+---
+
+## 📚 Core Documentation Indexes
+
+- 📖 **[Skills Catalog (71 Skills)](docs/skill-catalog.md)** — Exhaustive list of all 71 skills with trigger phrases, upstream sources, and cross-agent compatibility.
+- 🔌 **[Plugins & MCP Servers Catalog](docs/plugin-catalog.md)** — Pre-configured MCP servers, official Claude plugins (`code-review`, `claude-code-setup`), and marketplace registries.
+- 🗺️ **[Integration Roadmap](docs/integration-roadmap.md)** — Living tracker for phased upstream integrations (P0/P1 completed, P2/P3 scheduled).
+- 🛡️ **[Security Review & Safeguards](docs/security-review.md)** — Application testing policies (Strix), web retrieval constraints, and memory privacy boundaries.
+- 📦 **[Skills Sources Tracking](docs/skill-sources.md)** — Category breakdown and upstream origin audits.
 
 ---
 
@@ -17,21 +28,23 @@ This repository serves as a turnkey, production-ready template for AI-assisted d
 - [✨ Key Highlights](#-key-highlights)
 - [📂 Repository Architecture](#-repository-architecture)
 - [🚀 Quick Start](#-quick-start)
-- [🧠 53 Active Skills Directory](#-53-active-skills-directory)
-  - [1. B2B Lead Generation & Enrichment](#1-b2b-lead-generation--enrichment)
-  - [2. Cold Outreach & Email Automation](#2-cold-outreach--email-automation)
-  - [3. Sales, Proposals & Client Onboarding](#3-sales-proposals--client-onboarding)
-  - [4. Video Engineering & Content Outliers](#4-video-engineering--content-outliers)
-  - [5. Community Intelligence & Research](#5-community-intelligence--research)
-  - [6. Design Engineering, Animation & Craft UI](#6-design-engineering-animation--craft-ui)
-  - [7. Vercel, Next.js & Performance Optimization](#7-vercel-nextjs--performance-optimization)
-  - [8. Software Craftsmanship & Mobile](#8-software-craftsmanship--mobile)
-  - [9. Serverless Infrastructure & Webhooks](#9-serverless-infrastructure--webhooks)
-  - [10. Persistent Memory Architecture](#10-persistent-memory-architecture)
+- [🧠 Active Skills Directory (71 Verified)](#-active-skills-directory-71-verified)
+  - [1. Software Engineering Discipline (Superpowers v6.1.1)](#1-software-engineering-discipline-superpowers-v611)
+  - [2. Official Anthropic Meta-Skills & Web Testing](#2-official-anthropic-meta-skills--web-testing)
+  - [3. B2B Lead Generation & Market Intelligence](#3-b2b-lead-generation--market-intelligence)
+  - [4. Cold Outreach & Email Automation](#4-cold-outreach--email-automation)
+  - [5. Sales, Proposals & Client Onboarding](#5-sales-proposals--client-onboarding)
+  - [6. Video Engineering & Content Intelligence](#6-video-engineering--content-intelligence)
+  - [7. Community Intelligence & Research](#7-community-intelligence--research)
+  - [8. Design Engineering, Animation & Craft UI](#8-design-engineering-animation--craft-ui)
+  - [9. Vercel, Next.js & Performance Optimization](#9-vercel-nextjs--performance-optimization)
+  - [10. Software Craftsmanship & Mobile](#10-software-craftsmanship--mobile)
+  - [11. Serverless Infrastructure & Webhooks](#11-serverless-infrastructure--webhooks)
+  - [12. Persistent Memory Architecture](#12-persistent-memory-architecture)
 - [🤖 Autonomous Subagents](#-autonomous-subagents)
 - [📋 Turnkey Workflow Blueprints](#-turnkey-workflow-blueprints)
 - [🔌 MCP Servers Suite](#-mcp-servers-suite)
-- [💾 Persistent Memory Setup (Optional)](#-persistent-memory-setup-optional)
+- [💾 Persistent Memory Setup](#-persistent-memory-setup)
 - [🛡️ Key Principles & Self-Annealing](#-key-principles--self-annealing)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
@@ -40,13 +53,14 @@ This repository serves as a turnkey, production-ready template for AI-assisted d
 
 ## ✨ Key Highlights
 
-- **⚡ Zero-Friction Auto-Discovery**: Drop any folder into `.claude/skills/` or `.agents/skills/`. AI agents discover them on the fly based on intent-driven descriptions.
-- **💼 Full-Cycle Agency Stack**: From finding leads on Google Maps and Apify, classifying ICP via LLMs, drafting multi-variant Instantly cold campaigns, to closing with PandaDoc proposals.
-- **🎨 Elite Design Engineering Craft Bar**: Infused with Emil Kowalski motion principles, Apple Human Interface Guidelines, View Transitions API, and micro-animation craft.
-- **⚡ Vercel & Next.js Performance Engineering**: Pre-loaded with official Vercel engineering best practices, bundle reduction rules, route caching, and token CLI deployments.
+- **⚡ 100% Cross-Agent Parity**: Skills are mirrored across `.claude/skills/`, `.agents/skills/`, and `agent/skills/`, ensuring that **Google Antigravity**, **Claude Code**, **Cursor**, and **Codex** discover all 71 skills natively.
+- **🛡️ Battle-Tested Engineering Discipline**: Includes Jesse Vincent's **Superpowers (v6.1.1)** suite (`test-driven-development`, `systematic-debugging`, `writing-plans`, `subagent-driven-development`, and `verification-before-completion`).
+- **🧰 Official Anthropic Meta-Tooling**: Integrated `skill-creator` (meta-skill for authoring skills), `mcp-builder` (FastMCP and Node MCP SDK guide), and `webapp-testing` (Playwright test harness).
+- **💼 Full-Cycle Agency Stack**: Scrape leads from Google Maps and Apify, qualify ICP with LLMs, orchestrate multi-variant Instantly cold campaigns, and close deals with automated PandaDoc proposals.
+- **🎨 Elite Design Engineering Craft Bar**: Built with Emil Kowalski motion principles, Apple HIG, View Transitions API, `impeccable`, and Anthropic `frontend-design`.
+- **⚡ Vercel & Next.js Performance Engineering**: Vercel Engineering rules for React Server Components, bundle reduction, route caching, and token CLI deployments.
 - **🧠 Cross-Session Long-Term Memory**: 4 memory skills backed by local SQLite vector storage and Supabase cloud synchronization.
-- **👥 4 Ruthless Subagents**: Isolated agents for unbiased code review, test case generation/QA, deep academic research, and high-throughput email classification.
-- **🌐 Universal AI Compatibility**: Cross-configured with `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md` to run seamlessly in Claude Code, Cursor, Antigravity, Codex, or custom runners.
+- **👥 4 Dedicated Subagents**: Independent agents for code review, QA test generation, deep research, and high-throughput email classification.
 
 ---
 
@@ -55,33 +69,31 @@ This repository serves as a turnkey, production-ready template for AI-assisted d
 ```
 .
 ├── .claude/
-│   ├── skills/                  # 53 active agent skills (auto-discovered)
-│   │   ├── scrape-leads/        # Apify lead scraper + enrichment
-│   │   ├── gmaps-leads/         # Google Maps business discovery
-│   │   ├── emil-design-eng/     # High craft motion & design engineering
-│   │   ├── memory-capture/      # Real-time decision & context capture
-│   │   └── ...                  # (53 total skills)
+│   ├── skills/                  # 71 active agent skills (auto-discovered by Claude Code)
 │   ├── agents/                  # 4 specialized subagents
 │   │   ├── code-reviewer.md     # Zero-context code review
 │   │   ├── qa.md                # Edge-case test generation & execution
 │   │   ├── research.md          # Multi-source deep research
 │   │   └── email-classifier.md  # High-volume Gmail triage
 │   └── settings.json            # Plugin marketplace & MCP server config
-├── .agents/                     # Cross-agent compatibility skills mirror
-├── agent/                       # Agentic runners compatibility mirror
+├── .agents/skills/              # 71 skills mirrored for Google Antigravity & Agent standards
+├── agent/skills/                # 71 skills mirrored for CLI and alternative runners
 ├── prompts/                     # 3 production workflow blueprints
 │   ├── gmaps_lead_pipeline_builder.md
 │   ├── upwork_pipeline_builder.md
 │   └── instantly_campaign_creator.md
-├── docs/                        # Research and roadmap documentation
-│   ├── best-claude-code-skills-guide.md
-│   └── skill-sources.md
+├── docs/                        # Complete technical documentation
+│   ├── skill-catalog.md         # 71-skill directory with trigger phrases
+│   ├── plugin-catalog.md        # MCP servers and Claude plugins
+│   ├── integration-roadmap.md   # Phased rollout and upstream tracking
+│   ├── security-review.md       # Guardrails, Strix policy, and data hygiene
+│   └── skill-sources.md         # Upstream inventory tracking
 ├── vendor/                      # Reference repositories & upstream frameworks
-│   ├── superpowers/             # obra/superpowers (TDD, plan execution, debugging)
+│   ├── superpowers/             # obra/superpowers (v6.1.1)
 │   ├── claude-memory/           # Persistent vector memory system (Supabase sync)
 │   └── awesome-claude-code/     # Curated community skill references
 ├── .mcp.json                    # Bundled Model Context Protocol configurations
-├── CLAUDE.md                    # Primary workspace rule set for Claude Code
+├── CLAUDE.md                    # Workspace instruction rules for Claude Code
 ├── AGENTS.md                    # Open agent standards specification
 ├── GEMINI.md                    # Google Gemini / Antigravity workspace rules
 ├── package.json                 # Project configuration & dependencies
@@ -96,198 +108,171 @@ This repository serves as a turnkey, production-ready template for AI-assisted d
 ```bash
 git clone https://github.com/Vedant04-tech/claude-code-skills-library.git
 cd claude-code-skills-library
+npm install
 ```
 
-### 2. Launch Claude Code
-```bash
-claude
-```
-Claude Code automatically scans and activates all 53 skills in `.claude/skills/`.
+### 2. Launch in Google Antigravity or Claude Code
+- **In Google Antigravity**: All 71 skills in `.agents/skills/` are loaded automatically.
+- **In Claude Code**:
+  ```bash
+  claude
+  ```
+  Claude Code auto-discovers all 71 skills in `.claude/skills/`.
 
 ### 3. Try Sample Prompts
 ```bash
-# Lead Generation
-> "Scrape dental clinics in Austin Texas and qualify them for a website redesign"
+# Engineering Discipline (Superpowers)
+> "Use test-driven-development to implement the authentication token refresh logic"
+
+# Meta-Skill (Anthropic)
+> "Use skill-creator to design a new agent skill for Stripe webhook handling"
 
 # Design Engineering
-> "Review my React button animations against Emil Kowalski's motion principles"
+> "Review this modal animation against Emil Kowalski's motion craft guidelines"
 
-# Outreach Campaigns
-> "Draft an Instantly 3-step cold email campaign with 2 A/B subject line variants"
-
-# Code Review
-> "Delegate this PR to the code-reviewer subagent for a strict, unbiased audit"
+# B2B Lead Scraping
+> "Scrape dental clinics in Austin Texas and qualify them for a website redesign"
 ```
 
 ---
 
-## 🧠 53 Active Skills Directory
+## 🧠 Active Skills Directory (71 Verified)
 
-### 1. B2B Lead Generation & Enrichment
+*(See [`docs/skill-catalog.md`](docs/skill-catalog.md) for the full 71-skill index).*
+
+### 1. Software Engineering Discipline (Superpowers v6.1.1)
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`scrape-leads`](file:///.claude/skills/scrape-leads) | *"Scrape leads for SaaS founders"* | Scrapes and verifies leads using Apify, applies LLM scoring, and pushes to Google Sheets. |
-| [`gmaps-leads`](file:///.claude/skills/gmaps-leads) | *"Extract businesses from Google Maps"* | Google Maps scraper with contact discovery (emails, phones, social links). |
-| [`classify-leads`](file:///.claude/skills/classify-leads) | *"Score these prospects"* | LLM-based qualification and segment categorizer for CRM sheets. |
-| [`casualize-names`](file:///.claude/skills/casualize-names) | *"Clean first names for outreach"* | Normalizes formal names into natural conversational names (e.g., Jonathan → John). |
+| [`test-driven-development`](.claude/skills/test-driven-development) | *"Write tests first"* | Enforces strict TDD discipline: red, green, refactor cycle before writing code. |
+| [`systematic-debugging`](.claude/skills/systematic-debugging) | *"Debug this failure"* | Root-cause tracing, test pressure, and defense-in-depth bug isolation. |
+| [`writing-plans`](.claude/skills/writing-plans) | *"Plan this feature"* | Creates bite-sized, reviewable implementation plans before touching code. |
+| [`executing-plans`](.claude/skills/executing-plans) | *"Execute the plan"* | Executes plans step-by-step with checkpoints and verification gates. |
+| [`subagent-driven-development`](.claude/skills/subagent-driven-development) | *"Dispatch subagents"* | Dispatches isolated implementer and reviewer subagents for tasks. |
+| [`verification-before-completion`](.claude/skills/verification-before-completion) | *"Verify before PR"* | Requires running verification commands and confirming evidence before claims. |
+| [`brainstorming`](.claude/skills/brainstorming) | *"Brainstorm architecture"* | Explores user intent, requirements, and design before implementation. |
+| [`dispatching-parallel-agents`](.claude/skills/dispatching-parallel-agents) | *"Run parallel tasks"* | Dispatches 2+ independent tasks without shared state. |
+| [`finishing-a-development-branch`](.claude/skills/finishing-a-development-branch) | *"Complete feature branch"* | Guides branch integration, PR creation, and worktree cleanup. |
+| [`receiving-code-review`](.claude/skills/receiving-code-review) | *"Process PR review"* | Rigorous verification of review feedback; avoids performative agreement. |
+| [`requesting-code-review`](.claude/skills/requesting-code-review) | *"Request review"* | Validates work against requirements before merge. |
+| [`using-git-worktrees`](.claude/skills/using-git-worktrees) | *"Isolate workspace"* | Sets up clean git worktrees for isolated task execution. |
+| [`using-superpowers`](.claude/skills/using-superpowers) | *"Start session"* | Establishes how to find and use skills before responding. |
+| [`writing-skills`](.claude/skills/writing-skills) | *"Author a skill"* | Guides authoring and verifying skills before deployment. |
 
-### 2. Cold Outreach & Email Automation
+### 2. Official Anthropic Meta-Skills & Web Testing
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`instantly-campaigns`](file:///.claude/skills/instantly-campaigns) | *"Create a cold email campaign"* | Generates 3-step sequence campaigns in Instantly with multi-angle A/B test variations. |
-| [`instantly-autoreply`](file:///.claude/skills/instantly-autoreply) | *"Handle outreach inbox replies"* | Classifies inbound positive/negative responses and crafts context-aware replies. |
-| [`welcome-email`](file:///.claude/skills/welcome-email) | *"Send welcome sequence to onboarding client"* | Dispatches automated onboarding sequences for newly closed deals. |
-| [`gmail-inbox`](file:///.claude/skills/gmail-inbox) | *"Triage my customer emails"* | Unified inbox manager supporting multiple Gmail accounts and search queries. |
-| [`gmail-label`](file:///.claude/skills/gmail-label) | *"Organize emails by priority"* | Automated labeling rules and tag workflows for zero-inbox workflows. |
+| [`skill-creator`](.claude/skills/skill-creator) | *"Create a new skill"* | Official Anthropic framework for authoring, evaluating, and benchmarking skills. |
+| [`mcp-builder`](.claude/skills/mcp-builder) | *"Build an MCP server"* | Complete engineering guide for creating FastMCP and Node MCP SDK servers. |
+| [`webapp-testing`](.claude/skills/webapp-testing) | *"Test web application"* | Playwright UI test harness with `with_server.py` lifecycle runner. |
+| [`frontend-design`](.claude/skills/frontend-design) | *"Design distinctive UI"* | Guidance for intentional, non-templated visual design and typography. |
 
-### 3. Sales, Proposals & Client Onboarding
+### 3. B2B Lead Generation & Market Intelligence
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`create-proposal`](file:///.claude/skills/create-proposal) | *"Build a client proposal"* | Generates PandaDoc proposals dynamically using Google Sheets pricing & scope data. |
-| [`upwork-apply`](file:///.claude/skills/upwork-apply) | *"Write an Upwork bid for this job"* | Scrapes job posting details and tailors high-converting cover letters & technical bids. |
-| [`onboarding-kickoff`](file:///.claude/skills/onboarding-kickoff) | *"Run client kickoff setup"* | Orchestrates project workspaces, document templates, and initial milestone deliverables. |
+| [`scrape-leads`](.claude/skills/scrape-leads) | *"Scrape SaaS leads"* | Apify lead scraping, LLM classification, email enrichment, and Sheets export. |
+| [`gmaps-leads`](.claude/skills/gmaps-leads) | *"Google Maps leads"* | Local business discovery with website and LinkedIn contact enrichment. |
+| [`classify-leads`](.claude/skills/classify-leads) | *"Qualify leads"* | LLM-based lead scoring and ICP categorization in Google Sheets. |
+| [`casualize-names`](.claude/skills/casualize-names) | *"Clean first names"* | Converts formal names to natural conversational outreach names. |
 
-### 4. Video Engineering & Content Outliers
+### 4. Cold Outreach & Email Automation
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`video-edit`](file:///.claude/skills/video-edit) | *"Cut silence and edit this clip"* | Neural Voice Activity Detection (VAD) to trim dead air and stitch tight jump cuts. |
-| [`pan-3d-transition`](file:///.claude/skills/pan-3d-transition) | *"Add a 3D camera swivel between clips"* | Programmatic Remotion 3D pan and camera transition renderer. |
-| [`recreate-thumbnails`](file:///.claude/skills/recreate-thumbnails) | *"A/B test thumbnail face swaps"* | AI face-swapping pipeline for YouTube thumbnail iterations. |
-| [`youtube-outliers`](file:///.claude/skills/youtube-outliers) | *"Find breakout videos in my niche"* | Detects anomalous high-view videos exceeding average channel view baselines. |
-| [`cross-niche-outliers`](file:///.claude/skills/cross-niche-outliers) | *"Find viral concepts in adjacent niches"* | Discovers high-performing content angles across neighboring industries for adaptation. |
-| [`title-variants`](file:///.claude/skills/title-variants) | *"Generate 10 YouTube title ideas"* | Crafts high-CTR title variations engineered around curiosity gaps and tension hooks. |
+| [`instantly-campaigns`](.claude/skills/instantly-campaigns) | *"Create cold campaign"* | 3-step sequence campaigns in Instantly with multi-angle A/B test variants. |
+| [`instantly-autoreply`](.claude/skills/instantly-autoreply) | *"Reply to prospect"* | Classifies inbound positive/negative responses and crafts context-aware replies. |
+| [`welcome-email`](.claude/skills/welcome-email) | *"Send welcome sequence"* | Automated client onboarding email sequence. |
+| [`gmail-inbox`](.claude/skills/gmail-inbox) | *"Triage emails"* | Multi-account unified Gmail inbox triage. |
+| [`gmail-label`](.claude/skills/gmail-label) | *"Label inbox"* | Rules-based Gmail labeling and folder filtering workflows. |
 
-### 5. Community Intelligence & Research
+### 5. Sales, Proposals & Client Onboarding
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`skool-monitor`](file:///.claude/skills/skool-monitor) | *"Monitor Skool community discussions"* | Tracks member posts, unanswered questions, and high-engagement topics. |
-| [`skool-rag`](file:///.claude/skills/skool-rag) | *"Search our Skool knowledge base"* | Semantic vector search across historical community threads and masterminds. |
-| [`literature-research`](file:///.claude/skills/literature-research) | *"Summarize papers on PubMed/arXiv"* | Queries scientific databases and synthesizes structured academic literature reviews. |
+| [`create-proposal`](.claude/skills/create-proposal) | *"Build proposal"* | Generates PandaDoc proposals dynamically using Sheets pricing & scope data. |
+| [`upwork-apply`](.claude/skills/upwork-apply) | *"Write Upwork bid"* | Scrapes Upwork listings and tailors high-converting cover letters and bids. |
+| [`onboarding-kickoff`](.claude/skills/onboarding-kickoff) | *"Kickoff client"* | Orchestrates project workspaces, document templates, and initial tasks. |
 
-### 6. Design Engineering, Animation & Craft UI
+### 6. Video Engineering & Content Intelligence
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`emil-design-eng`](file:///.claude/skills/emil-design-eng) | *"Elevate component craft"* | Enforces Emil Kowalski design engineering principles: springs, physics, and polish. |
-| [`apple-design`](file:///.claude/skills/apple-design) | *"Follow Apple Human Interface Guidelines"* | Applies Apple HIG typography, spacing, depth, blur, and fluid interaction patterns. |
-| [`web-design-guidelines`](file:///.claude/skills/web-design-guidelines) | *"Audit UI for design system rules"* | Strict checklist audits for accessibility, contrast ratios, and layout stability. |
-| [`hallmark`](file:///.claude/skills/hallmark) & [`impeccable`](file:///.claude/skills/impeccable) | *"Add signature polish to this page"* | Visual excellence standards that elevate generic templates to award-winning tiers. |
-| [`prototype`](file:///.claude/skills/prototype) | *"Build 3 different versions of this card"* | Generates multiple distinct layout variants behind an interactive switcher component. |
-| [`pick-ui-library`](file:///.claude/skills/pick-ui-library) | *"What library should I use for toast alerts?"* | Opinionated recommendation engine for OTPs, virtualization, drag & drop, and charts. |
-| [`design-website`](file:///.claude/skills/design-website) | *"Create a landing page in Tailwind"* | Complete responsive web page generation with semantic layout and animations. |
-| [`animate`](file:///.claude/skills/animate) | *"Add micro-interactions to this navbar"* | Precision CSS & Tailwind keyframe transitions, spring curves, and hover states. |
-| [`animate-expo`](file:///.claude/skills/animate-expo) | *"Animate React Native Expo screen"* | Reanimated and gesture-handler patterns for native mobile performance. |
-| [`animation-vocabulary`](file:///.claude/skills/animation-vocabulary) | *"Define easing curves and timing"* | Motion design taxonomy covering durations, dampening, overshoot, and stagger. |
-| [`find-animation-opportunities`](file:///.claude/skills/find-animation-opportunities) | *"Where should we add motion?"* | Audits static interfaces to identify delightful interaction moments. |
-| [`improve-animations`](file:///.claude/skills/improve-animations) | *"Refine this jarring transition"* | Tunes abrupt linear movements into natural, physics-governed spring animations. |
-| [`review-animations`](file:///.claude/skills/review-animations) | *"Audit motion performance"* | Flags layout thrashing, non-composited properties, and jank-inducing CSS. |
+| [`video-edit`](.claude/skills/video-edit) | *"Edit video silences"* | Neural Voice Activity Detection (VAD) to trim dead air and stitch jump cuts. |
+| [`pan-3d-transition`](.claude/skills/pan-3d-transition) | *"Add 3D swivel"* | Programmatic Remotion 3D pan and camera transition renderer. |
+| [`recreate-thumbnails`](.claude/skills/recreate-thumbnails) | *"Swap thumbnail face"* | AI face-swapping pipeline for YouTube thumbnail CTR optimization. |
+| [`youtube-outliers`](.claude/skills/youtube-outliers) | *"Find viral videos"* | Detects anomalous high-view videos exceeding average channel view baselines. |
+| [`cross-niche-outliers`](.claude/skills/cross-niche-outliers) | *"Cross-niche viral angles"* | Discovers breakout video angles from adjacent industries for adaptation. |
+| [`title-variants`](.claude/skills/title-variants) | *"Generate YouTube titles"* | High-CTR title variations engineered around curiosity gaps and tension hooks. |
 
-### 7. Vercel, Next.js & Performance Optimization
+### 7. Community Intelligence & Research
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`vercel-react-best-practices`](file:///.claude/skills/vercel-react-best-practices) | *"Optimize React component rendering"* | Vercel Engineering rules for Server Components, memoization, and rendering waterfalls. |
-| [`vercel-composition-patterns`](file:///.claude/skills/vercel-composition-patterns) | *"Refactor complex component tree"* | Clean compound component architecture and state colocation best practices. |
-| [`vercel-optimize`](file:///.claude/skills/vercel-optimize) | *"Reduce Vercel function compute & bills"* | Diagnoses cold starts, data transfer overhead, Edge config, and Core Web Vitals. |
-| [`vercel-cli-with-tokens`](file:///.claude/skills/vercel-cli-with-tokens) | *"Deploy to Vercel in headless CI"* | Scripted deployments using auth tokens, environment variable binding, and aliasing. |
-| [`deploy-to-vercel`](file:///.claude/skills/deploy-to-vercel) | *"Ship project to Vercel"* | Streamlined zero-configuration production deployment execution. |
-| [`vercel-react-view-transitions`](file:///.claude/skills/vercel-react-view-transitions) | *"Implement page transitions in Next.js"* | Native React View Transition API (`<ViewTransition>`) without bulky libraries. |
-| [`vercel-react-native-skills`](file:///.claude/skills/vercel-react-native-skills) | *"Review cross-platform React code"* | Shared architectural patterns between web and React Native codebases. |
+| [`skool-monitor`](.claude/skills/skool-monitor) | *"Monitor Skool community"* | Tracks member posts, unanswered questions, and engagement velocity. |
+| [`skool-rag`](.claude/skills/skool-rag) | *"Search Skool knowledge"* | Semantic vector search across historical community threads and masterminds. |
+| [`literature-research`](.claude/skills/literature-research) | *"Research papers"* | Queries scientific databases (PubMed/arXiv) and synthesizes literature reviews. |
 
-### 8. Software Craftsmanship & Mobile
+### 8. Design Engineering, Animation & Craft UI
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`write-swift`](file:///.claude/skills/write-swift) | *"Write modern Swift 6 concurrency code"* | Idiomatic Swift 6: data-race safety, actors, task groups, value types, and macros. |
-| [`writing-guidelines`](file:///.claude/skills/writing-guidelines) | *"Audit our engineering documentation"* | Audits prose against clarity, punchiness, and Diátaxis documentation principles. |
-| [`generate-report`](file:///.claude/skills/generate-report) | *"Export executive analytics PDF"* | Compiles multi-page PDF executive summaries with charts, tables, and KPIs. |
+| [`emil-design-eng`](.claude/skills/emil-design-eng) | *"Elevate component craft"* | Enforces Emil Kowalski design engineering principles: springs, physics, and polish. |
+| [`apple-design`](.claude/skills/apple-design) | *"Apple HIG design"* | Applies Apple Human Interface Guidelines: typography, spacing, depth, and blur. |
+| [`web-design-guidelines`](.claude/skills/web-design-guidelines) | *"Audit UI against design rules"* | Checklists for accessibility, contrast ratios, and layout stability. |
+| [`hallmark`](.claude/skills/hallmark) & [`impeccable`](.claude/skills/impeccable) | *"Add signature polish"* | Visual excellence standards that elevate generic templates to award-winning tiers. |
+| [`prototype`](.claude/skills/prototype) | *"Build 3 UI variants"* | Generates multiple distinct layout variants behind an interactive switcher. |
+| [`pick-ui-library`](.claude/skills/pick-ui-library) | *"Pick UI component library"* | Opinionated recommendation engine for OTPs, virtualization, drag & drop, and charts. |
+| [`design-website`](.claude/skills/design-website) | *"Create Tailwind page"* | Complete responsive web page generation with semantic layout and animations. |
+| [`animate`](.claude/skills/animate) | *"Add micro-animations"* | Precision CSS & Tailwind keyframe transitions, spring curves, and hover states. |
+| [`animate-expo`](.claude/skills/animate-expo) | *"Animate React Native screen"* | Reanimated and gesture-handler patterns for native mobile performance. |
+| [`animation-vocabulary`](.claude/skills/animation-vocabulary) | *"Define easing curves"* | Motion design taxonomy covering durations, dampening, overshoot, and stagger. |
+| [`find-animation-opportunities`](.claude/skills/find-animation-opportunities) | *"Find motion moments"* | Audits static interfaces to identify delightful interaction moments. |
+| [`improve-animations`](.claude/skills/improve-animations) | *"Refine abrupt animation"* | Tunes abrupt linear movements into natural, physics-governed spring animations. |
+| [`review-animations`](.claude/skills/review-animations) | *"Audit motion performance"* | Flags layout thrashing, non-composited properties, and frame jank. |
 
-### 9. Serverless Infrastructure & Webhooks
+### 9. Vercel, Next.js & Performance Optimization
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`add-webhook`](file:///.claude/skills/add-webhook) | *"Create a serverless webhook on Modal"* | Registers event-driven cloud endpoints for incoming webhooks. |
-| [`modal-deploy`](file:///.claude/skills/modal-deploy) | *"Deploy Python function to Modal"* | Ships GPU and serverless Python workloads into Modal cloud infrastructure. |
-| [`local-server`](file:///.claude/skills/local-server) | *"Spin up local test orchestrator"* | Runs mock endpoints and orchestration servers for local testing. |
+| [`vercel-react-best-practices`](.claude/skills/vercel-react-best-practices) | *"Optimize React rendering"* | Vercel Engineering rules for Server Components, memoization, and waterfalls. |
+| [`vercel-composition-patterns`](.claude/skills/vercel-composition-patterns) | *"Refactor component tree"* | Clean compound component architecture and state colocation best practices. |
+| [`vercel-optimize`](.claude/skills/vercel-optimize) | *"Reduce Vercel compute bills"* | Diagnoses cold starts, data transfer overhead, Edge config, and Core Web Vitals. |
+| [`vercel-cli-with-tokens`](.claude/skills/vercel-cli-with-tokens) | *"Deploy headless Vercel"* | Scripted deployments using auth tokens, environment variable binding, and aliasing. |
+| [`deploy-to-vercel`](.claude/skills/deploy-to-vercel) | *"Ship to Vercel"* | Streamlined zero-configuration production deployment execution. |
+| [`vercel-react-view-transitions`](.claude/skills/vercel-react-view-transitions) | *"Implement view transitions"* | Native React View Transition API (`<ViewTransition>`) without bulky libraries. |
+| [`vercel-react-native-skills`](.claude/skills/vercel-react-native-skills) | *"Cross-platform React"* | Shared architectural patterns between web and React Native codebases. |
 
-### 10. Persistent Memory Architecture
+### 10. Software Craftsmanship & Mobile
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
-| [`memory-capture`](file:///.claude/skills/memory-capture) | *"Save key architecture decision"* | Records technical insights and conventions into vector memory during sessions. |
-| [`memory-cloud-recall`](file:///.claude/skills/memory-cloud-recall) | *"What did we decide about auth last week?"* | Queries remote Supabase memory when local context window is cleared. |
-| [`memory-session-start`](file:///.claude/skills/memory-session-start) | *"Resume context from previous session"* | Ingests recent learnings, active branch goals, and user preferences on startup. |
-| [`memory-session-end`](file:///.claude/skills/memory-session-end) | *"Wrap up and summarize session"* | Compiles structured summaries and commits progress checkpoints. |
+| [`write-swift`](.claude/skills/write-swift) | *"Write modern Swift 6"* | Idiomatic Swift 6: data-race safety, actors, task groups, value types, and macros. |
+| [`writing-guidelines`](.claude/skills/writing-guidelines) | *"Audit technical docs"* | Audits prose against clarity, punchiness, and Diátaxis documentation principles. |
+| [`generate-report`](.claude/skills/generate-report) | *"Export executive PDF"* | Compiles multi-page PDF executive summaries with charts, tables, and KPIs. |
+
+### 11. Serverless Infrastructure & Webhooks
+| Skill | Trigger / Use Case | Description |
+|---|---|---|
+| [`add-webhook`](.claude/skills/add-webhook) | *"Create Modal webhook"* | Registers event-driven cloud endpoints for incoming webhooks. |
+| [`modal-deploy`](.claude/skills/modal-deploy) | *"Deploy Python to Modal"* | Ships GPU and serverless Python workloads into Modal cloud infrastructure. |
+| [`local-server`](.claude/skills/local-server) | *"Run local orchestrator"* | Runs mock endpoints and orchestration servers for local testing. |
+
+### 12. Persistent Memory Architecture
+| Skill | Trigger / Use Case | Description |
+|---|---|---|
+| [`memory-capture`](.claude/skills/memory-capture) | *"Save architecture decision"* | Records technical insights and conventions into vector memory during sessions. |
+| [`memory-cloud-recall`](.claude/skills/memory-cloud-recall) | *"Recall decision from last week"* | Queries remote Supabase memory when local context window is cleared. |
+| [`memory-session-start`](.claude/skills/memory-session-start) | *"Resume session context"* | Ingests recent learnings, active branch goals, and user preferences on startup. |
+| [`memory-session-end`](.claude/skills/memory-session-end) | *"Wrap up session"* | Compiles structured summaries and commits progress checkpoints. |
 
 ---
 
 ## 🤖 Autonomous Subagents
 
-Located in [`.claude/agents/`](file:///.claude/agents):
+Located in [`.claude/agents/`](.claude/agents):
 
-```mermaid
-graph TD
-    User([User Prompt]) --> Claude[Claude Code Orchestrator]
-    Claude --> CR[Code Reviewer Agent]
-    Claude --> QA[QA & Testing Agent]
-    Claude --> Res[Deep Research Agent]
-    Claude --> EC[Email Classifier Agent]
-    
-    CR --> |Ruthless Review| Result1[PR Feedback]
-    QA --> |Edge Cases & Tests| Result2[Test Suite]
-    Res --> |Multi-source Synthesis| Result3[Research Dossier]
-    EC --> |Priority & Labels| Result4[Clean Inbox]
-```
-
-1. **`code-reviewer`** ([`code-reviewer.md`](file:///.claude/agents/code-reviewer.md)):
-   - **Persona**: Uncompromising senior staff engineer.
-   - **Mode**: Zero previous conversational context for complete objectivity.
-   - **Focus**: Concurrency bugs, security vulnerabilities, regression risks, and code smell elimination.
-
-2. **`qa`** ([`qa.md`](file:///.claude/agents/qa.md)):
-   - **Persona**: Thorough quality assurance lead.
-   - **Focus**: Boundary value exploration, failure injection, test generation (Jest/Vitest/Playwright), and automated verification.
-
-3. **`research`** ([`research.md`](file:///.claude/agents/research.md)):
-   - **Persona**: Principal technical researcher.
-   - **Focus**: Web scraping, API documentation analysis, benchmark synthesis, and technical feasibility reports.
-
-4. **`email-classifier`** ([`email-classifier.md`](file:///.claude/agents/email-classifier.md)):
-   - **Persona**: High-throughput communications triage.
-   - **Focus**: Separates urgent client requests from cold sales pitches and newsletters in bulk.
-
----
-
-## 📋 Turnkey Workflow Blueprints
-
-Located in [`prompts/`](file:///prompts):
-
-1. **Google Maps B2B Lead Machine** ([`gmaps_lead_pipeline_builder.md`](file:///prompts/gmaps_lead_pipeline_builder.md))
-   - Scrapes local niche businesses from Google Maps.
-   - Enriches leads with verified email addresses, owner LinkedIn profiles, and technology stack data.
-   - Stores structured outputs in Google Sheets ready for sales outreach.
-
-2. **Upwork Proposal Automation** ([`upwork_pipeline_builder.md`](file:///prompts/upwork_pipeline_builder.md))
-   - Parses high-value Upwork job listings filtering for verified payment & budget thresholds.
-   - Drafts bespoke, highly relevant technical proposals addressing client pain points.
-
-3. **Instantly Cold Outreach Engine** ([`instantly_campaign_creator.md`](file:///prompts/instantly_campaign_creator.md))
-   - Configures 3-tier campaigns with dynamic variables (`{{firstName}}`, `{{companyName}}`).
-   - Automatically populates A/B test variations across subject lines and call-to-actions.
+1. **`code-reviewer`** ([`code-reviewer.md`](.claude/agents/code-reviewer.md)): Senior staff engineer persona; zero previous conversational context for complete objectivity.
+2. **`qa`** ([`qa.md`](.claude/agents/qa.md)): Boundary value exploration, failure injection, test generation (Jest/Vitest/Playwright).
+3. **`research`** ([`research.md`](.claude/agents/research.md)): Deep web scraping, API documentation analysis, and feasibility synthesis.
+4. **`email-classifier`** ([`email-classifier.md`](.claude/agents/email-classifier.md)): High-throughput communication triage for Gmail inboxes.
 
 ---
 
 ## 🔌 MCP Servers Suite
 
-Pre-configured in [`.mcp.json`](file:///.mcp.json) and [`.claude/settings.json`](file:///.claude/settings.json):
-
-```json
-{
-  "mcpServers": {
-    "context7": { "command": "npx", "args": ["-y", "@upstash/context7-mcp@latest"] },
-    "playwright": { "command": "npx", "args": ["-y", "@playwright/mcp@latest"] },
-    "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem"] },
-    "memory": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-memory"] },
-    "fetch": { "command": "npx", "args": ["-y", "mcp-fetch-server"] }
-  }
-}
-```
-
+Pre-configured in [`.mcp.json`](.mcp.json) and [`.claude/settings.json`](.claude/settings.json):
 - **`context7`**: High-performance semantic vector search.
 - **`playwright`**: Full browser automation, screenshots, and visual testing.
 - **`filesystem`**: Secure, scoped directory manipulation.
@@ -296,49 +281,11 @@ Pre-configured in [`.mcp.json`](file:///.mcp.json) and [`.claude/settings.json`]
 
 ---
 
-## 💾 Persistent Memory Setup (Optional)
-
-To enable cloud-synced memory across different devices using the bundled [`vendor/claude-memory`](file:///vendor/claude-memory):
-
-1. Navigate to the memory directory:
-   ```bash
-   cd vendor/claude-memory
-   ```
-2. Execute the setup script:
-   ```bash
-   ./install.sh
-   ```
-3. Set your Supabase credentials in `~/.claude-memory-cloud.env`:
-   ```env
-   SUPABASE_URL=https://your-project.supabase.co
-   SUPABASE_SERVICE_KEY=your-service-role-key
-   ```
-4. The agent will now persist decisions, code styles, and past tasks indefinitely.
-
----
-
 ## 🛡️ Key Principles & Self-Annealing
 
-1. **Auto-Discovery by Intent**:
-   Every skill contains a curated ~100-character description in its `SKILL.md`. Claude Code routes requests to the proper skill autonomously without manual flags.
-2. **The Self-Annealing Loop**:
-   If an external API changes or a script fails, the agent fixes the implementation and updates `SKILL.md` with the newly learned pattern. The repository gets smarter with every interaction.
-3. **Multi-Environment First**:
-   All core rules are synced across `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md`, ensuring identical performance regardless of whether your team uses Claude Code, Google Antigravity, or Cursor.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you've built a high-leverage skill or workflow:
-
-1. Fork this repository.
-2. Create a feature branch: `git checkout -b skill/new-awesome-skill`.
-3. Add your skill folder to `.claude/skills/<skill-name>/` containing:
-   - `SKILL.md` (with YAML frontmatter: `name` and `description`).
-   - Relevant scripts or reference documentation.
-4. Test with Claude Code.
-5. Open a Pull Request.
+1. **Auto-Discovery by Intent**: Every skill contains a curated description in its `SKILL.md`. Agents route requests autonomously based on intent.
+2. **The Self-Annealing Loop**: When external APIs change or scripts fail, the agent repairs the implementation and updates `SKILL.md` with the learned fix.
+3. **Multi-Environment First**: Rules are mirrored across `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md`, ensuring identical performance across Claude Code and Google Antigravity.
 
 ---
 
@@ -349,6 +296,6 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 ---
 
 <p align="center">
-  <b>Built with ❤️ by <a href="https://github.com/Vedant04-tech">Vedant04-tech</a></b><br>
-  <i>Empowering developers and agencies with autonomous AI workflows.</i>
+  <b>Maintained by <a href="https://github.com/Vedant04-tech">Vedant04-tech</a></b><br>
+  <i>Empowering developers and agencies with autonomous AI engineering workflows.</i>
 </p>

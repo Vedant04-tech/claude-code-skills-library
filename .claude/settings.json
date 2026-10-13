@@ -1,20 +1,25 @@
 {
   "plugins": {
     "marketplaces": {
+      "claude-plugins-official": {
+        "url": "https://registry.anthropic.com/anthropics/claude-plugins-official",
+        "enabled": true,
+        "note": "Official Anthropic plugins: code-review, claude-code-setup (automation recommender), commit-commands"
+      },
       "anthropics": {
         "url": "https://registry.anthropic.com/anthropics/skills",
         "enabled": true,
-        "note": "Official Anthropic skills (skill-creator, mcp-builder, webapp-testing, web-artifacts-builder)"
+        "note": "Official Anthropic skills: skill-creator, mcp-builder, webapp-testing, frontend-design"
       },
       "superpowers": {
         "url": "https://registry.anthropic.com/obra/superpowers-marketplace",
         "enabled": true,
-        "note": "TDD/planning/debugging discipline framework by Jesse Vincent (257k stars)"
+        "note": "TDD/planning/debugging discipline framework by Jesse Vincent (v6.1.1)"
       },
       "vercel": {
         "url": "https://registry.anthropic.com/vercel-labs/agent-skills",
         "enabled": false,
-        "note": "Use npx skills CLI instead: npx skills add vercel-labs/agent-skills --skill <name>"
+        "note": "Installed locally in .claude/skills and .agents/skills; can also be managed via npx skills add"
       },
       "wshobson": {
         "url": "https://registry.anthropic.com/wshobson/agents",
@@ -26,7 +31,19 @@
         "enabled": false,
         "note": "ML/MLOps skills; install via /plugin marketplace add alirezarezvani/claude-skills"
       }
-    }
+    },
+    "recommended": [
+      {
+        "id": "code-review@claude-plugins-official",
+        "command": "/plugin install code-review@claude-plugins-official",
+        "description": "Multi-agent parallel code reviewer with confidence threshold filtering"
+      },
+      {
+        "id": "claude-code-setup@claude-plugins-official",
+        "command": "/plugin install claude-code-setup@claude-plugins-official",
+        "description": "Project analysis and automated recommendations for custom skills and MCP servers"
+      }
+    ]
   },
   "mcpServers": {
     "context7": {
@@ -42,7 +59,11 @@
     "filesystem": {
       "enabled": true,
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\Admin\\Documents\\My Claude-Antigravity-AI projects folder"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Admin\\Documents\\My Claude-Antigravity-AI projects folder"
+      ]
     },
     "memory": {
       "enabled": true,
@@ -56,8 +77,8 @@
     }
   },
   "notes": {
-    "setup": "After installing plugins, run 'claude' to verify skills load automatically.",
+    "setup": "All active skills in .claude/skills and .agents/skills are auto-discovered at runtime.",
     "memory": "Memory skills require vendor/claude-memory/install.sh to be run separately and Supabase config.",
-    "docs": "See docs/skill-sources.md for installation instructions for each recommended skill."
+    "docs": "See docs/skill-sources.md and docs/integration-roadmap.md for roadmap tracking."
   }
 }

@@ -10,9 +10,9 @@
 
 | Priority | Track | Focus Areas | Status |
 |:---:|---|---|:---:|
-| **P0** | **Inventory & Parity Audit** | Reconcile filesystem counts, fix `.agents/skills/` 30-skill discrepancy, update `skill-sources.md`. | **Ready for Review** |
-| **P1** | **Core Discipline & Official Tooling** | `superpowers` (v6.1.1), official Anthropic skills (`skill-creator`, `mcp-builder`, `webapp-testing`), Vercel `frontend-design`, official `code-review` & `claude-code-setup`. | **Proposed Batch 1** |
-| **P2** | **Cognitive & Developer Productivity** | `Ponytail` (anti-overengineering), `Taste` (anti-slop UI), `Headroom` (context compression), `Find Skills` (discovery), `AnyDoc` (office document parser), `Graphify` (AST codebase graph). | **Planned** |
+| **P0** | **Inventory & Parity Audit** | Reconcile filesystem counts, fix `.agents/skills/` 30-skill discrepancy, update `skill-sources.md`. | **Installed & Verified ✓** |
+| **P1** | **Core Discipline & Official Tooling** | `superpowers` (v6.1.1), official Anthropic skills (`skill-creator`, `mcp-builder`, `webapp-testing`), Vercel `frontend-design`, official `code-review` & `claude-code-setup`. | **Installed & Verified ✓** |
+| **P2** | **Cognitive & Developer Productivity** | `Ponytail` (anti-overengineering), `Taste` (anti-slop UI), `Headroom` (context compression), `Find Skills` (discovery), `AnyDoc` (office document parser), `Graphify` (AST codebase graph). | **Next Batch Planned** |
 | **P3** | **Security, Web & Advanced Memory** | `claude-mem` (progressive disclosure memory audit vs Supabase), `Agent Reach` (web research with TOS audit), `Strix` (sandboxed penetration testing), `PeterHdd/agent-skills` (senior engineering). | **Planned** |
 
 ---
@@ -21,11 +21,11 @@
 
 | Project | Canonical Upstream | Tool Type | Licence | OS / Prerequisites | Security & Privacy Risk | Overlap Analysis | Status |
 |---|---|---|---|---|---|---|:---:|
-| **Superpowers** | [`obra/superpowers`](https://github.com/obra/superpowers) | Agent Skills & Hooks | MIT | Cross-platform | Local-only execution; safe. | Core TDD/planning framework. Already in `vendor/superpowers`, needs skill exposure. | **Planned (P1)** |
-| **Official Anthropic Skills** | [`anthropics/skills`](https://github.com/anthropics/skills) | Agent Skills (`SKILL.md`) | MIT | Cross-platform, Python, Playwright | Safe; official Anthropic references. | `skill-creator`, `mcp-builder`, `webapp-testing`. No current overlap. | **Planned (P1)** |
-| **Official Code Review Plugin** | [`anthropics/claude-plugins-official`](https://github.com/anthropics/claude-plugins-official) | Claude Code Plugin | MIT | Claude Code CLI | Read-only code inspection. | Overlaps with `.claude/agents/code-reviewer.md`. Will complement as formal multi-agent review plugin. | **Planned (P1)** |
-| **Claude Code Setup** | [`anthropics/claude-plugins-official`](https://github.com/anthropics/claude-plugins-official) | Claude Code Plugin | MIT | Claude Code CLI | Inspects manifests in read-only mode. | Automates configuration recommendations. | **Planned (P1)** |
-| **Vercel Frontend Design** | [`vercel-labs/agent-skills`](https://github.com/vercel-labs/agent-skills) | Agent Skill (`SKILL.md`) | Apache-2.0 / MIT | Cross-platform | Static prompt/rules guidance. | Complements existing `impeccable` and `emil-design-eng`. | **Planned (P1)** |
+| **Superpowers** | [`obra/superpowers`](https://github.com/obra/superpowers) | Agent Skills & Hooks | MIT | Cross-platform | Local-only execution; safe. | Core TDD/planning framework. 14 discipline skills active. | **Installed & Verified ✓** |
+| **Official Anthropic Skills** | [`anthropics/skills`](https://github.com/anthropics/skills) | Agent Skills (`SKILL.md`) | MIT | Cross-platform, Python, Playwright | Safe; official Anthropic references. | `skill-creator`, `mcp-builder`, `webapp-testing`. | **Installed & Verified ✓** |
+| **Official Code Review Plugin** | [`anthropics/claude-plugins-official`](https://github.com/anthropics/claude-plugins-official) | Claude Code Plugin | MIT | Claude Code CLI | Read-only code inspection. | Overlaps with `.claude/agents/code-reviewer.md`. Configured in `.claude/settings.json`. | **Configured ✓** |
+| **Claude Code Setup** | [`anthropics/claude-plugins-official`](https://github.com/anthropics/claude-plugins-official) | Claude Code Plugin | MIT | Claude Code CLI | Inspects manifests in read-only mode. | Configured in `.claude/settings.json`. | **Configured ✓** |
+| **Vercel Frontend Design** | [`anthropics/skills`](https://github.com/anthropics/skills) / [`vercel-labs/agent-skills`](https://github.com/vercel-labs/agent-skills) | Agent Skill (`SKILL.md`) | Apache-2.0 / MIT | Cross-platform | Static prompt/rules guidance. | Distinctive non-slop design system guidelines. | **Installed & Verified ✓** |
 | **Ponytail** | [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail) | Agent Skill / Rule | MIT | Cross-platform | Static rules enforcement; zero risk. | Distinct capability: enforces YAGNI and anti-overengineering decision ladders. | **Planned (P2)** |
 | **Taste** | [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill) | Agent Skill (`SKILL.md`) | MIT | Cross-platform | Static UI rules; safe. | Synergizes with `emil-design-eng` and `impeccable`. | **Planned (P2)** |
 | **Find Skills** | [`vercel-labs/skills`](https://github.com/vercel-labs/skills) | Agent Skill (`SKILL.md`) | MIT | Node.js (`npx skills`) | Queries public skill registries; safe. | Replaces manual skill hunting with automated lookup. | **Planned (P2)** |
