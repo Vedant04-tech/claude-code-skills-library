@@ -79,78 +79,95 @@ You operate using Claude Code Skills - bundled capabilities that combine instruc
 
 **Why this works:** if you do everything yourself, errors compound. 90% accuracy per step = 59% success over 5 steps. The solution is push complexity into deterministic code. That way you just focus on decision-making.
 
-## Available Skills (32 total)
+## Available Skills (100 total)
 
-### Lead Generation & Enrichment (4)
-- `scrape-leads` - Scrape leads via Apify with verification
-- `gmaps-leads` - Google Maps lead scraping with deep enrichment
-- `classify-leads` - LLM-based lead classification
-- `casualize-names` - Convert formal names to casual versions
+> Full directory with triggers and compatibility: [`docs/skill-catalog.md`](docs/skill-catalog.md)  
+> All 100 skills are mirrored across `.claude/skills/`, `.agents/skills/`, and `agent/skills/`.
 
-### Email & Campaigns (5)
-- `instantly-campaigns` - Create cold email campaigns in Instantly
-- `instantly-autoreply` - Auto-reply to incoming emails
-- `welcome-email` - Send welcome sequence to new clients
-- `gmail-inbox` - Manage emails across Gmail accounts
-- `gmail-label` - Manage Gmail labels and bulk operations
+### 1. Senior Engineering Playbooks (PeterHdd — 9)
+- `engineering-senior-developer` - Senior implementation judgment, architecture tradeoffs, review checklists
+- `engineering-system-designer` - Distributed architecture, scalability, sharding, and ADR creation
+- `engineering-backend-architect` - Schema design, sub-20ms DB indexing, API contracts, caching
+- `engineering-devops-automator` - Terraform IaC, Docker containerization, CI/CD, canary deployments
+- `engineering-frontend-developer` - Modern React/Vue/Svelte UI, Core Web Vitals, accessibility
+- `engineering-ml-engineer` - PyTorch, HuggingFace, LoRA/QLoRA, embeddings, RAG pipelines
+- `engineering-mobile-app-builder` - SwiftUI, Jetpack Compose, Flutter, React Native, offline-first
+- `engineering-rapid-prototyper` - High-speed MVP prototyping, BaaS integration, hypothesis testing
+- `engineering-security-engineer` - Threat modeling (STRIDE), OWASP remediation, security headers
 
-### Sales & Proposals (2)
-- `create-proposal` - Generate PandaDoc proposals
-- `upwork-apply` - Scrape Upwork and generate proposals
+### 2. Autonomous Application Security & Pentesting (Strix — 9)
+- `penetration-testing-with-strix` - End-to-end autonomous pentesting with exploit validation (Docker sandboxed)
+- `find-security-vulnerabilities-in-code` - White-box code vulnerability review with working proof-of-concepts
+- `owasp-top-10-testing` - Systematic OWASP Top 10:2025 assessment and validation
+- `api-security-testing` - OWASP API Security Top 10 testing for REST, GraphQL, and gRPC
+- `application-security-testing` - Cross-stack AppSec assessment and ranked remediation plans
+- `ci-security-scanning-with-strix` - Diff-scoped pre-merge security gates for CI/CD pipelines
+- `fix-security-vulnerabilities-with-strix` - Root-cause vulnerability patching with verification re-scans
+- `managed-pentesting-with-strix` - Managed cloud pentesting via app.strix.ai CLI/API
+- `web-app-penetration-testing` - Black-box web application testing for live URLs and staging environments
 
-### Content & Video (6)
-- `video-edit` - Remove silences, add 3D transitions
-- `pan-3d-transition` - Create 3D swivel effects
-- `recreate-thumbnails` - Face-swap YouTube thumbnails
-- `cross-niche-outliers` - Find viral videos from adjacent niches
-- `youtube-outliers` - Monitor your niche for outliers
-- `title-variants` - Generate YouTube title variations
+### 3. Universal Web Retrieval & Research (Agent Reach & Literature — 2)
+- `agent-reach` - Universal internet content router across 15+ services (GitHub, Reddit, Twitter, YouTube, Exa, V2EX)
+- `literature-research` - Search academic databases (PubMed, arXiv) and synthesize literature reviews
 
-### Community & Research (3)
-- `skool-monitor` - Monitor and interact with Skool communities
-- `skool-rag` - Query Skool content via RAG pipeline
-- `literature-research` - Search academic databases
+### 4. Software Engineering Discipline (Superpowers v6.1.1 — 14)
+- `test-driven-development` - Red-green-refactor cycle before writing production code
+- `systematic-debugging` - Root-cause tracing, test pressure, defense-in-depth bug isolation
+- `writing-plans` / `executing-plans` - Bite-sized implementation plans with checkpoints
+- `subagent-driven-development` - Independent implementer and reviewer subagents
+- `verification-before-completion` - Strict verification commands before claiming success
+- `brainstorming` / `dispatching-parallel-agents` / `finishing-a-development-branch`
+- `receiving-code-review` / `requesting-code-review` / `using-git-worktrees` / `using-superpowers` / `writing-skills`
 
-### Web & Design (1)
-- `design-website` - Generate custom websites with Claude
+### 5. Pragmatic Anti-Overengineering (Ponytail — 5)
+- `ponytail` - Decision ladder for simplest standard library solution and YAGNI adherence
+- `ponytail-review` - Code review focused on stripping unneeded abstractions and dependencies
+- `ponytail-audit` - Repository-wide sweep for over-engineering
+- `ponytail-debt` / `ponytail-gain` - Tech debt ledger and code reduction scoreboard
 
-### Reporting & Analytics (1)
-- `generate-report` - Create multi-page PDF reports with charts
-
-### Client Onboarding (1)
-- `onboarding-kickoff` - Full post-kickoff automation
-
-### Infrastructure (3)
-- `add-webhook` - Add new Modal webhooks
-- `modal-deploy` - Deploy to Modal cloud
-- `local-server` - Run orchestrator locally
-
-### Design & Craft Engineering (Emil Kowalski) (12)
+### 6. Design Engineering, Motion & Craft (16)
 - `emil-design-eng` - Core design-engineering doctrine & tactile UI principles
-- `animate` - Motion craft, custom timing curves & property transitions
-- `animate-expo` - React Native / Expo motion animations
-- `animation-vocabulary` - Reverse lookup from descriptions to technical terms
+- `design-taste-frontend` - Strict anti-slop rules, design intensity dials, OKLCH palettes
+- `frontend-design` - Non-templated typography, layouts, and distinctive frontend direction
 - `apple-design` - iOS/macOS human interface guidelines & spring physics
-- `ask-sonner` - Toast & notification pattern best practices
-- `find-animation-opportunities` - Audit UI for meaningful motion placement
-- `improve-animations` - Motion audit & prioritized refinement plans
-- `pick-ui-library` - Selection matrix for UI frameworks & component sets
-- `prototype` - Fast interactive prototype generation
-- `review-animations` - Adversarial Motion Craft review against high standards
-- `write-swift` - Idiomatic Swift & SwiftUI layout implementation
+- `web-design-guidelines` - Design checklists for accessibility, contrast, and layout
+- `impeccable` / `hallmark` - High-polish micro-details and UI signature standards
+- `prototype` / `pick-ui-library` / `design-website` - Interactive UI prototyping and library selection
+- `animate` / `animate-expo` / `animation-vocabulary` - Physics-based motion and easing curves
+- `find-animation-opportunities` / `improve-animations` / `review-animations` - Animation auditing
 
-### Impeccable Design System (pbakaus/impeccable) (1)
-- `impeccable` - Anti-pattern design linter, /polish & /audit design commands
+### 7. Document Parsing & Knowledge Systems (2)
+- `convert-documents-to-markdown` (AnyDoc) - Converts DOCX, PPTX, XLSX, PDF, EPUB to Markdown
+- `graphify` (Graphify) - Codebase knowledge graph via Tree-sitter AST and interactive visualizer
 
-### Hallmark (nutlope/hallmark) (1)
-- `hallmark` - Watermark & hallmark generator for UI components
+### 8. Meta-Tooling, Discovery & Evolution (3)
+- `skill-creator` (Anthropic) - Author, evaluate, and benchmark agent skills
+- `find-skills` (Vercel Labs) - On-demand skill registry search
+- `task-observer` (One Skill) - Real-time friction capture and skill drafting
 
-### Memory Skills (4)
-- `memory-capture` - Capture decisions and learnings automatically
-- `memory-cloud-recall` - Recall from cloud memory store
-- `memory-session-end` - Save session state at end
-- `memory-session-start` - Load session state at start
-(Requires `vendor/claude-memory/install.sh` and Supabase setup — see `.claude/skills/README.md`)
+### 9. Agency Automation & Lead Generation (24)
+- `scrape-leads` / `gmaps-leads` / `classify-leads` / `casualize-names` - B2B lead generation
+- `instantly-campaigns` / `instantly-autoreply` / `welcome-email` - Cold outreach automation
+- `gmail-inbox` / `gmail-label` - Multi-account unified Gmail triage
+- `create-proposal` / `upwork-apply` / `onboarding-kickoff` - Sales, bidding, and onboarding
+- `video-edit` / `pan-3d-transition` / `recreate-thumbnails` - Programmatic video engineering
+- `cross-niche-outliers` / `youtube-outliers` / `title-variants` - YouTube content intelligence
+- `skool-monitor` / `skool-rag` - Community monitoring and semantic knowledge search
+- `generate-report` / `add-webhook` / `modal-deploy` / `local-server` - Reporting & infrastructure
+
+### 10. Vercel, React & Performance (7)
+- `vercel-react-best-practices` / `vercel-composition-patterns` / `vercel-optimize`
+- `vercel-cli-with-tokens` / `deploy-to-vercel` / `vercel-react-view-transitions` / `vercel-react-native-skills`
+
+### 11. Systems Craftsmanship & Testing (4)
+- `mcp-builder` - FastMCP & Node MCP SDK development guide
+- `webapp-testing` - Playwright testing harness and server lifecycle runner
+- `write-swift` - Modern Swift 6 strict concurrency implementation
+- `writing-guidelines` - Technical documentation prose review
+
+### 12. Persistent Memory System (4)
+- `memory-capture` / `memory-cloud-recall` / `memory-session-end` / `memory-session-start`
+  *(Opt-in Supabase memory via `vendor/claude-memory` or local SQLite/Chroma via `claude-mem`)*
 
 ## Subagents
 
