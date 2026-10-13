@@ -13,7 +13,7 @@
 | **P0** | **Inventory & Parity Audit** | Reconcile filesystem counts, fix `.agents/skills/` 30-skill discrepancy, update `skill-sources.md`. | **Installed & Verified ✓** |
 | **P1** | **Core Discipline & Official Tooling** | `superpowers` (v6.1.1), official Anthropic skills (`skill-creator`, `mcp-builder`, `webapp-testing`), Vercel `frontend-design`, official `code-review` & `claude-code-setup`. | **Installed & Verified ✓** |
 | **P2** | **Cognitive & Developer Productivity** | `Ponytail` (anti-overengineering), `Taste` (anti-slop UI), `Headroom` (context compression), `Find Skills` (discovery), `AnyDoc` (office document parser), `Graphify` (AST codebase graph), `Task Observer`. | **Installed & Verified ✓** |
-| **P3** | **Security, Web & Advanced Memory** | `claude-mem` (progressive disclosure memory audit vs Supabase), `Agent Reach` (web research with TOS audit), `Strix` (sandboxed penetration testing), `PeterHdd/agent-skills` (senior engineering). | **Next Batch Planned** |
+| **P3** | **Security, Web & Advanced Systems** | `PeterHdd/agent-skills` (senior engineering), `Strix` (sandboxed penetration testing suite), `Agent Reach` (multi-platform web research with TOS audit), `claude-mem` (documented opt-in local memory architecture). | **Installed & Verified ✓** |
 
 ---
 
@@ -33,10 +33,10 @@
 | **Headroom** | [`headroomlabs-ai/headroom`](https://github.com/headroomlabs-ai/headroom) | CLI / Proxy / MCP Server | Apache-2.0 | Node/Python | Local compression; caches tool outputs locally. | Configured in `.claude/settings.json` and docs. | **Configured ✓** |
 | **Task Observer** | [`rebelytics/one-skill-to-rule-them-all`](https://github.com/rebelytics/one-skill-to-rule-them-all) | Agent Skill (`SKILL.md`) | MIT | Cross-platform | Local observation logging; safe. | Continuous observer capturing friction & drafting skills. | **Installed & Verified ✓** |
 | **Graphify** | [`safishamsi/graphify`](https://github.com/safishamsi/graphify) | Agent Skill + CLI | MIT | Python / `uv`, Tree-sitter | Deterministic local AST parsing; safe. | Codebase structural map (`graph.json`, `graph.html`). | **Installed & Verified ✓** |
-| **claude-mem** | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem) | Claude Code Plugin | MIT | Node.js, SQLite, Chroma | Stores observations locally. | Significant overlap with existing `vendor/claude-memory` (Supabase). Requires opt-in design. | **Planned (P3)** |
-| **Agent Reach** | [`Panniantong/Agent-Reach`](https://github.com/Panniantong/Agent-Reach) | Agent Skill / Scraper | MIT | Python / Node | Scrapes public endpoints without API keys. Prone to rate limits & TOS violations. | Overlaps with Apify `scrape-leads` and `research` subagent. | **Planned (P3)** |
-| **Strix** | [`usestrix/strix`](https://github.com/usestrix/strix) | Security Agent Skill / MCP | AGPL-3.0 / MIT | Docker / Kali Sandbox | Active vulnerability scanning; high impact if pointed at unauthorized targets. | Strictly sandboxed testing only. Non-destructive, user-owned targets only. | **Planned (P3)** |
-| **Senior Engineering Skills** | [`PeterHdd/agent-skills`](https://github.com/PeterHdd/agent-skills) | Agent Skills (`SKILL.md`) | MIT | Cross-platform | Architectural decision rules; safe. | Complements `superpowers` with explicit senior developer playbooks. | **Planned (P3)** |
+| **Senior Engineering Skills** | [`PeterHdd/agent-skills`](https://github.com/PeterHdd/agent-skills) | Agent Skills (`SKILL.md`) | MIT | Cross-platform, Python | Architectural decision rules & scripts; safe. | 9 complete senior engineering playbooks & quality gates. | **Installed & Verified ✓** |
+| **Strix Pentesting Suite** | [`usestrix/strix`](https://github.com/usestrix/strix) | Security Agent Skills | Apache-2.0 | Docker sandbox / Python | Active vulnerability validation; requires local sandbox & permission. | 9 specialized skills for code audit, OWASP, and pentesting. | **Installed & Verified ✓** |
+| **Agent Reach** | [`Panniantong/Agent-Reach`](https://github.com/Panniantong/Agent-Reach) | Agent Skill + Routers | MIT | Python / Node | Public endpoints; requires polite rate limiting and local cookies. | Multi-platform research & content router (15+ platforms). | **Installed & Verified ✓** |
+| **claude-mem** | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem) | Claude Code Plugin | MIT | Node.js, SQLite, Chroma | Stores observations locally. | Configured in `.claude/settings.json` and documented as opt-in alternative to Supabase. | **Documented & Ready ✓** |
 
 ---
 

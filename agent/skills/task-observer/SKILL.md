@@ -1,4 +1,4 @@
-﻿---
+---
 name: "task-observer"
 core_max_lines: 684
 version: "3.6.0"

@@ -1,4 +1,4 @@
-﻿# Python MCP Server Implementation Guide
+# Python MCP Server Implementation Guide
 
 ## Overview
 

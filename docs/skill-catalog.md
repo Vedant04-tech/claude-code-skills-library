@@ -1,88 +1,188 @@
-﻿# 📖 Active Skills Catalog (81 Verified Skills)
+# 📚 Curated Skills Catalog (100 Active Skills)
 
-> **Complete, verified catalog of all 81 active agent skills with 100% cross-agent parity across Claude Code, Google Antigravity, Cursor, and Codex.**
-> **Last Audited:** October 13, 2026
+> **Comprehensive index of all 100 audited and verified skills available across Google Antigravity, Claude Code, Cursor, and Codex.**  
+> **Last Audited:** October 13, 2026  
+> **Parity Guarantee:** 100% parity across `.claude/skills/`, `.agents/skills/`, and `agent/skills/`.
 
-| # | Skill Name | Origin / Upstream | Purpose & Trigger Guidance | Compatibility | Status |
-|---|---|---|---|:---:|:---:|
-| 1 | **`add-webhook`** | Custom Agency Automation | Add new Modal webhooks for event-driven execution. Use when user asks to create a webhook, add an endpoint, or set up event triggers. | Universal | Verified Active ✓ |
-| 2 | **`animate`** | Design Engineering (Emil Kowalski) | Build an animation from scratch, making the decisions in the order that determines whether it feels right â€” should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations. | Universal | Verified Active ✓ |
-| 3 | **`animate-expo`** | Design Engineering (Emil Kowalski) | Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right â€” should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`. | Universal | Verified Active ✓ |
-| 4 | **`animation-vocabulary`** | Design Engineering (Emil Kowalski) | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" â†’ Pop in; "the iOS rubber-band scroll" â†’ Rubber-banding). Use when the user asks "what's it called whenâ€¦", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one. | Universal | Verified Active ✓ |
-| 5 | **`apple-design`** | Design Engineering (Emil Kowalski) | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces. | Universal | Verified Active ✓ |
-| 6 | **`ask-sonner`** | Design Engineering (Emil Kowalski) | Guide to Sonner, the React toast library â€” install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it â€” toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode. | Universal | Verified Active ✓ |
-| 7 | **`brainstorming`** | Superpowers (obra/superpowers v6.1.1) | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation. | Universal | Verified Active ✓ |
-| 8 | **`casualize-names`** | Custom Agency Automation | Convert formal names to casual versions for cold email personalization - first names, company names, and city names. Use when user asks to casualize names, make names friendly, or prepare lead data for emails. | Universal | Verified Active ✓ |
-| 9 | **`classify-leads`** | Custom Agency Automation | Classify leads using LLM for complex distinctions like product SaaS vs agencies. Use when user asks to classify leads, filter leads by type, or categorize businesses. | Universal | Verified Active ✓ |
-| 10 | **`convert-documents-to-markdown`** | AnyDoc (firecrawl/anydoc) | Convert Word (.doc, .docx), PowerPoint (.ppt, .pptx), Excel (.xls, .xlsx), OpenDocument (.odt, .ods, .odp), RTF, EPUB, CSV, and PDF files to GitHub-Flavored Markdown. Use when a task needs the contents of an office document, spreadsheet, presentation, ebook, or PDF you cannot read directly. | Universal | Verified Active ✓ |
-| 11 | **`create-proposal`** | Custom Agency Automation | Generate PandaDoc proposals from client information or sales call transcripts. Use when user asks to create a proposal, generate a quote, draft a contract, or prepare a client document. | Universal | Verified Active ✓ |
-| 12 | **`cross-niche-outliers`** | Custom Agency Automation | Find viral YouTube videos from adjacent business niches to extract content patterns and hooks. Use when user asks to find content inspiration, YouTube outliers, viral video patterns, or cross-niche content ideas. | Universal | Verified Active ✓ |
-| 13 | **`deploy-to-vercel`** | Vercel Engineering (vercel-labs/agent-skills) | Deploy applications and websites to Vercel. Use when the user requests deployment actions like "deploy my app", "deploy and give me the link", "push this live", or "create a preview deployment". | Universal | Verified Active ✓ |
-| 14 | **`design-taste-frontend`** | Taste Skill (Leonxlnx/taste-skill) | Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check. | Universal | Verified Active ✓ |
-| 15 | **`design-website`** | Custom Agency Automation | Generate a premium mockup website for a prospect using the buildinamsterdam.com template style. Use when user asks to design a website, create a mockup, or build a prospect website. | Universal | Verified Active ✓ |
-| 16 | **`dispatching-parallel-agents`** | Superpowers (obra/superpowers v6.1.1) | Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies | Universal | Verified Active ✓ |
-| 17 | **`emil-design-eng`** | Design Engineering (Emil Kowalski) | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. | Universal | Verified Active ✓ |
-| 18 | **`executing-plans`** | Superpowers (obra/superpowers v6.1.1) | Use when you have a written implementation plan to execute in a separate session with review checkpoints | Universal | Verified Active ✓ |
-| 19 | **`find-animation-opportunities`** | Design Engineering (Emil Kowalski) | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks "what could be animated here?" or wants to "make this feel more alive". For fixing existing animations, use improve-animations or review-animations instead. | Universal | Verified Active ✓ |
-| 20 | **`find-skills`** | Vercel Labs (vercel-labs/skills) | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill. | Universal | Verified Active ✓ |
-| 21 | **`finishing-a-development-branch`** | Superpowers (obra/superpowers v6.1.1) | Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup | Universal | Verified Active ✓ |
-| 22 | **`frontend-design`** | Anthropic Official (anthropics/skills) | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults. | Universal | Verified Active ✓ |
-| 23 | **`generate-report`** | Custom Agency Automation | Generate weekly weather reports for Canada using Open-Meteo API (free, no API key required) and PDF generation. Use when user asks to create a weather report, generate Canada weather summary, or build weekly weather PDF. | Universal | Verified Active ✓ |
-| 24 | **`gmail-inbox`** | Custom Agency Automation | Manage emails across multiple Gmail accounts with unified tooling. Use when user asks to check email, read inbox, label emails, archive messages, or manage Gmail across accounts. | Universal | Verified Active ✓ |
-| 25 | **`gmail-label`** | Custom Agency Automation | Auto-label Gmail emails into Action Required, Waiting On, and Reference categories. Use when user asks to label emails, triage inbox, categorize emails, or organize Gmail. | Universal | Verified Active ✓ |
-| 26 | **`gmaps-leads`** | Custom Agency Automation | Scrape Google Maps for B2B leads with deep website enrichment and contact extraction. Use when user asks to find local businesses, scrape Google Maps, generate contractor lists, or build local service business databases. | Universal | Verified Active ✓ |
-| 27 | **`graphify`** | Graphify (safishamsi/graphify) | any input (code, docs, papers, images) → knowledge graph → clustered communities → HTML + JSON + audit report | Universal | Verified Active ✓ |
-| 28 | **`hallmark`** | Hallmark UI (nutlope/hallmark) | Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots. Use when the user asks to build a new app or landing page, wants to redesign something, invokes Hallmark by name, or uses audit/redesign/study. | Universal | Verified Active ✓ |
-| 29 | **`impeccable`** | Impeccable Design (pbakaus/impeccable) | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks. | Universal | Verified Active ✓ |
-| 30 | **`improve-animations`** | Design Engineering (Emil Kowalski) | Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code â€” it plans improvements, it does not apply them. Use when the user asks to "improve the animations", "audit the motion", "make this app feel better", or wants a roadmap of animation fixes rather than a review of a single diff. | Universal | Verified Active ✓ |
-| 31 | **`instantly-autoreply`** | Custom Agency Automation | Auto-generate intelligent replies to incoming Instantly email threads using knowledge bases. Use when user asks about email auto-replies, Instantly responses, or automated email handling. | Universal | Verified Active ✓ |
-| 32 | **`instantly-campaigns`** | Custom Agency Automation | Create cold email campaigns in Instantly with A/B testing. Use when user asks to create email campaigns, set up cold outreach, build email sequences, or configure Instantly campaigns. | Universal | Verified Active ✓ |
-| 33 | **`literature-research`** | Custom Agency Automation | Search academic literature and perform deep research reviews. Use when user asks to search PubMed, find academic papers, or do literature reviews. | Universal | Verified Active ✓ |
-| 34 | **`local-server`** | Custom Agency Automation | Run Claude orchestrator locally with Cloudflare tunneling. Use when user asks to run locally, start local server, or test webhooks locally. | Universal | Verified Active ✓ |
-| 35 | **`mcp-builder`** | Anthropic Official (anthropics/skills) | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | Universal | Verified Active ✓ |
-| 36 | **`capture`** | Claude Memory System (vendor/claude-memory) | / | Universal | Verified Active ✓ |
-| 37 | **`cloud-recall`** | Claude Memory System (vendor/claude-memory) | / | Universal | Verified Active ✓ |
-| 38 | **`session-end`** | Claude Memory System (vendor/claude-memory) | / | Universal | Verified Active ✓ |
-| 39 | **`session-start`** | Claude Memory System (vendor/claude-memory) | / | Universal | Verified Active ✓ |
-| 40 | **`modal-deploy`** | Custom Agency Automation | Deploy execution scripts to Modal cloud. Use when user asks to deploy to Modal, push code to cloud, or update Modal functions. | Universal | Verified Active ✓ |
-| 41 | **`onboarding-kickoff`** | Custom Agency Automation | Automated client onboarding after kickoff call - generates leads, creates email campaigns, sets up auto-reply. Use when user asks to onboard a new client, set up campaigns for client, or run post-kickoff automation. | Universal | Verified Active ✓ |
-| 42 | **`pan-3d-transition`** | Custom Agency Automation | Create 3D pan/swivel transition effects for videos using Remotion. Use when user asks to add 3D transitions, create swivel effects, or add video transitions. | Universal | Verified Active ✓ |
-| 43 | **`pick-ui-library`** | Design Engineering (Emil Kowalski) | Pick the right library for a given frontend task from a curated, opinionated list â€” numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own. | Universal | Verified Active ✓ |
-| 44 | **`ponytail`** | Ponytail (DietrichGebert/ponytail) | > | Universal | Verified Active ✓ |
-| 45 | **`ponytail-audit`** | Ponytail (DietrichGebert/ponytail) | > | Universal | Verified Active ✓ |
-| 46 | **`ponytail-debt`** | Ponytail (DietrichGebert/ponytail) | > | Universal | Verified Active ✓ |
-| 47 | **`ponytail-gain`** | Ponytail (DietrichGebert/ponytail) | > | Universal | Verified Active ✓ |
-| 48 | **`ponytail-review`** | Ponytail (DietrichGebert/ponytail) | > | Universal | Verified Active ✓ |
-| 49 | **`prototype`** | Design Engineering (Emil Kowalski) | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own. | Universal | Verified Active ✓ |
-| 50 | **`receiving-code-review`** | Superpowers (obra/superpowers v6.1.1) | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation | Universal | Verified Active ✓ |
-| 51 | **`recreate-thumbnails`** | Custom Agency Automation | Face-swap YouTube thumbnails to feature Your Name using AI. Use when user asks to recreate thumbnails, face swap images, generate YouTube thumbnails, or create thumbnail variations. | Universal | Verified Active ✓ |
-| 52 | **`requesting-code-review`** | Superpowers (obra/superpowers v6.1.1) | Use when completing tasks, implementing major features, or before merging to verify work meets requirements | Universal | Verified Active ✓ |
-| 53 | **`review-animations`** | Design Engineering (Emil Kowalski) | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned. | Universal | Verified Active ✓ |
-| 54 | **`scrape-leads`** | Custom Agency Automation | Scrape and verify business leads using Apify, classify with LLM, enrich emails, and save to Google Sheets. Use when user asks to find leads, scrape businesses, generate prospect lists, or build lead databases for any industry or location. | Universal | Verified Active ✓ |
-| 55 | **`skill-creator`** | Anthropic Official (anthropics/skills) | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy. | Universal | Verified Active ✓ |
-| 56 | **`skool-monitor`** | Custom Agency Automation | Monitor and interact with Skool communities - read posts, create posts, reply to comments, like content, and search. Use when user asks to check Skool, read community posts, interact with Skool, or manage Skool community. | Universal | Verified Active ✓ |
-| 57 | **`skool-rag`** | Custom Agency Automation | Query Skool community content using RAG pipeline with vector search. Use when user asks to search Skool knowledge, find community answers, or query Skool content. | Universal | Verified Active ✓ |
-| 58 | **`subagent-driven-development`** | Superpowers (obra/superpowers v6.1.1) | Use when executing implementation plans with independent tasks in the current session | Universal | Verified Active ✓ |
-| 59 | **`systematic-debugging`** | Superpowers (obra/superpowers v6.1.1) | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | Universal | Verified Active ✓ |
-| 60 | **`task-observer`** | One Skill / Rebelytics (rebelytics) | Monitors task execution for skill improvement opportunities. Use during ANY multi-step task, agentic workflow, or work session. Captures patterns, user corrections and methodology worth preserving as reusable skills. It writes observation files to the workspace. Also triggers in post-task feedback discussions and when the user mentions skill observations, the observation log, or skill taxonomy. Also known as \"One Skill to Rule Them All\" — trigger on this phrase too. IMPORTANT: invoke this skill before the FIRST tool call of any session and before writing or proposing a plan — any turn that will involve a tool call counts. This sentence is the session-start trigger and the only activation layer that survives an unreachable config file; pair it with a CLAUDE.md instruction or a harness session-start hook (references/environments.md) — description matching alone is not enforceable. A subagent dispatched by a session already running it does not run it: it writes nothing and puts its findings in its report. | Universal | Verified Active ✓ |
-| 61 | **`test-driven-development`** | Superpowers (obra/superpowers v6.1.1) | Use when implementing any feature or bugfix, before writing implementation code | Universal | Verified Active ✓ |
-| 62 | **`title-variants`** | Custom Agency Automation | Generate title variants for YouTube videos from outlier analysis. Use when user asks to create title variations, generate YouTube titles, or adapt video titles. | Universal | Verified Active ✓ |
-| 63 | **`upwork-apply`** | Custom Agency Automation | Scrape Upwork jobs and generate personalized proposals with cover letters. Use when user asks to find Upwork jobs, create Upwork proposals, or apply to Upwork listings. | Universal | Verified Active ✓ |
-| 64 | **`using-git-worktrees`** | Superpowers (obra/superpowers v6.1.1) | Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback | Universal | Verified Active ✓ |
-| 65 | **`using-superpowers`** | Superpowers (obra/superpowers v6.1.1) | Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions | Universal | Verified Active ✓ |
-| 66 | **`vercel-cli-with-tokens`** | Vercel Engineering (vercel-labs/agent-skills) | Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login â€” e.g. "deploy to vercel", "set up vercel", "add environment variables to vercel". | Universal | Verified Active ✓ |
-| 67 | **`vercel-composition-patterns`** | Vercel Engineering (vercel-labs/agent-skills) |  | Universal | Verified Active ✓ |
-| 68 | **`vercel-optimize`** | Vercel Engineering (vercel-labs/agent-skills) | Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps. Collect Vercel metrics, usage, project config, and code scan results first; investigate only metric-backed candidates; produce ranked recommendations grounded in verified files and version-aware Vercel/framework docs. Trigger for Vercel bill reduction, slow or expensive routes, caching opportunities, Function Invocations, Build Minutes, Fast Data Transfer, Core Web Vitals, Bot Management, Fluid compute, or cost breakdown requests. | Universal | Verified Active ✓ |
-| 69 | **`vercel-react-best-practices`** | Vercel Engineering (vercel-labs/agent-skills) | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements. | Universal | Verified Active ✓ |
-| 70 | **`vercel-react-native-skills`** | Vercel Engineering (vercel-labs/agent-skills) |  | Universal | Verified Active ✓ |
-| 71 | **`vercel-react-view-transitions`** | Vercel Engineering (vercel-labs/agent-skills) | Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries. | Universal | Verified Active ✓ |
-| 72 | **`verification-before-completion`** | Superpowers (obra/superpowers v6.1.1) | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always | Universal | Verified Active ✓ |
-| 73 | **`video-edit`** | Custom Agency Automation | Edit talking-head videos by removing silences with neural VAD and adding 3D swivel teaser transitions. Use when user asks to edit video, remove silences, add jump cuts, or create video teasers. | Universal | Verified Active ✓ |
-| 74 | **`webapp-testing`** | Anthropic Official (anthropics/skills) | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs. | Universal | Verified Active ✓ |
-| 75 | **`web-design-guidelines`** | Vercel Engineering (vercel-labs/agent-skills) | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices". | Universal | Verified Active ✓ |
-| 76 | **`welcome-email`** | Custom Agency Automation | Send welcome email sequence to new clients. Use when user asks to send welcome emails, onboard new client with emails, or trigger welcome sequence. | Universal | Verified Active ✓ |
-| 77 | **`write-swift`** | Systems & Prose Craftsmanship | How to write modern Swift well â€” modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing. | Universal | Verified Active ✓ |
-| 78 | **`writing-guidelines`** | Systems & Prose Craftsmanship | Review docs/prose for Writing Guidelines compliance. Use when asked to "review my docs", "check writing style", "audit prose", "review docs voice and tone", or "check this page against the writing handbook". | Universal | Verified Active ✓ |
-| 79 | **`writing-plans`** | Superpowers (obra/superpowers v6.1.1) | Use when you have a spec or requirements for a multi-step task, before touching code | Universal | Verified Active ✓ |
-| 80 | **`writing-skills`** | Superpowers (obra/superpowers v6.1.1) | Use when creating new skills, editing existing skills, or verifying skills work before deployment | Universal | Verified Active ✓ |
-| 81 | **`youtube-outliers`** | Custom Agency Automation | Find viral YouTube videos in your niche for competitive intelligence. Use when user asks to find YouTube outliers, monitor competitors, or track viral videos. | Universal | Verified Active ✓ |
+---
+
+## 📊 Quick Category Overview
+
+| Category | Count | Primary Focus |
+|---|:---:|---|
+| **Senior Engineering Playbooks (PeterHdd)** | **9** | Architect scalable backend systems, database schemas, APIs, ... |
+| **Autonomous Security & Pentesting (Strix)** | **9** | Security-test a REST, GraphQL, or gRPC API with Strix — auto... |
+| **Web Retrieval & Deep Research** | **2** | MUST USE when user wants to 调研/research/搜索/search/查/找/look u... |
+| **Engineering Discipline (Superpowers)** | **14** | You MUST use this before any creative work - creating featur... |
+| **Pragmatic Anti-Overengineering (Ponytail)** | **5** | Lazy senior dev mode: the smallest change that fully solves ... |
+| **Design Engineering, Motion & Craft** | **16** | Build an animation from scratch, making the decisions in the... |
+| **Document Parsing & AST Knowledge Graphs** | **2** | Convert Word (.doc, .docx), PowerPoint (.ppt, .pptx), Excel ... |
+| **Meta-Tooling, Evolution & Discovery** | **3** | Helps users discover and install agent skills when they ask ... |
+| **Systems Craftsmanship & Testing** | **4** | Guide for creating high-quality MCP (Model Context Protocol)... |
+| **Vercel, React & Performance** | **8** | Deploy applications and websites to Vercel. Use when the use... |
+| **Persistent Memory System (Supabase)** | **4** | Save important context to persistent memory for future sessi... |
+| **Agency Business & Lead Generation** | **24** | Add new Modal webhooks for event-driven execution. Use when ... |
+
+---
+
+## 🗂️ Detailed Catalog by Domain
+
+### Senior Engineering Playbooks (PeterHdd) (9 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`engineering-backend-architect`** | Architect scalable backend systems, database schemas, APIs, and cloud infrastructure for robust server-side applicati... | `.claude/skills/engineering-backend-architect`<br>`.agents/skills/engineering-backend-architect` |
+| **`engineering-devops-automator`** | Automate infrastructure provisioning, CI/CD pipelines, and cloud operations for reliable deployments. Use when you ne... | `.claude/skills/engineering-devops-automator`<br>`.agents/skills/engineering-devops-automator` |
+| **`engineering-frontend-developer`** | Build modern web applications with React, Vue, Angular, or Svelte, focusing on performance and accessibility. Use whe... | `.claude/skills/engineering-frontend-developer`<br>`.agents/skills/engineering-frontend-developer` |
+| **`engineering-ml-engineer`** | Build and deploy machine learning models with PyTorch, HuggingFace Transformers, and scikit-learn. Use when you need ... | `.claude/skills/engineering-ml-engineer`<br>`.agents/skills/engineering-ml-engineer` |
+| **`engineering-mobile-app-builder`** | Build native and cross-platform mobile applications for iOS and Android with optimized performance and platform integ... | `.claude/skills/engineering-mobile-app-builder`<br>`.agents/skills/engineering-mobile-app-builder` |
+| **`engineering-rapid-prototyper`** | Build functional prototypes and MVPs at maximum speed to validate ideas through working software. Use when you need p... | `.claude/skills/engineering-rapid-prototyper`<br>`.agents/skills/engineering-rapid-prototyper` |
+| **`engineering-security-engineer`** | Secure applications, infrastructure, and pipelines through threat modeling, vulnerability assessment, and security ar... | `.claude/skills/engineering-security-engineer`<br>`.agents/skills/engineering-security-engineer` |
+| **`engineering-senior-developer`** | Lead complex software implementation, architecture decisions, and reliable delivery across any modern technology stac... | `.claude/skills/engineering-senior-developer`<br>`.agents/skills/engineering-senior-developer` |
+| **`engineering-system-designer`** | Design distributed systems, define architecture for scalability and reliability, or create system design documents. U... | `.claude/skills/engineering-system-designer`<br>`.agents/skills/engineering-system-designer` |
+
+### Autonomous Security & Pentesting (Strix) (9 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`api-security-testing`** | Security-test a REST, GraphQL, or gRPC API with Strix — autonomous agents that enumerate endpoints from an OpenAPI/Gr... | `.claude/skills/api-security-testing`<br>`.agents/skills/api-security-testing` |
+| **`application-security-testing`** | Application security testing (AppSec) across a whole product with Strix — decide which asset needs which test (source... | `.claude/skills/application-security-testing`<br>`.agents/skills/application-security-testing` |
+| **`ci-security-scanning-with-strix`** | Add security scanning to CI/CD with Strix — GitHub Actions, GitLab CI, or any pipeline — so every pull request gets a... | `.claude/skills/ci-security-scanning-with-strix`<br>`.agents/skills/ci-security-scanning-with-strix` |
+| **`find-security-vulnerabilities-in-code`** | Find security vulnerabilities in a codebase or repository with Strix — a white-box AI security review that reads your... | `.claude/skills/find-security-vulnerabilities-in-code`<br>`.agents/skills/find-security-vulnerabilities-in-code` |
+| **`fix-security-vulnerabilities-with-strix`** | Fix security vulnerabilities found by a Strix pentest (open-source CLI or app.strix.ai cloud) — triage by severity, p... | `.claude/skills/fix-security-vulnerabilities-with-strix`<br>`.agents/skills/fix-security-vulnerabilities-with-strix` |
+| **`managed-pentesting-with-strix`** | Run a managed pentest of a web app, API, repository, or local workspace on the app.strix.ai platform with the `strix ... | `.claude/skills/managed-pentesting-with-strix`<br>`.agents/skills/managed-pentesting-with-strix` |
+| **`owasp-top-10-testing`** | Test an application against the OWASP Top 10 with Strix — autonomous AI agents that attempt real exploits for each ca... | `.claude/skills/owasp-top-10-testing`<br>`.agents/skills/owasp-top-10-testing` |
+| **`penetration-testing-with-strix`** | Pentest a web app, API, codebase, repository, URL, domain, or IP with Strix — autonomous AI penetration testing that ... | `.claude/skills/penetration-testing-with-strix`<br>`.agents/skills/penetration-testing-with-strix` |
+| **`web-app-penetration-testing`** | Pentest a web app or website end to end — black-box testing of a live URL, staging environment, or local dev server t... | `.claude/skills/web-app-penetration-testing`<br>`.agents/skills/web-app-penetration-testing` |
+
+### Web Retrieval & Deep Research (2 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`agent-reach`** | MUST USE when user wants to 调研/research/搜索/search/查/找/look up anything on the internet — e.g. 全网调研 X / 帮我调研一下 X / 查一下... | `.claude/skills/agent-reach`<br>`.agents/skills/agent-reach` |
+| **`literature-research`** | Search academic literature and perform deep research reviews. Use when user asks to search PubMed, find academic pape... | `.claude/skills/literature-research`<br>`.agents/skills/literature-research` |
+
+### Engineering Discipline (Superpowers) (14 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`brainstorming`** | You MUST use this before any creative work - creating features, building components, adding functionality, or modifyi... | `.claude/skills/brainstorming`<br>`.agents/skills/brainstorming` |
+| **`dispatching-parallel-agents`** | Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies | `.claude/skills/dispatching-parallel-agents`<br>`.agents/skills/dispatching-parallel-agents` |
+| **`executing-plans`** | Use when you have a written implementation plan to execute in a separate session with review checkpoints | `.claude/skills/executing-plans`<br>`.agents/skills/executing-plans` |
+| **`finishing-a-development-branch`** | Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides comple... | `.claude/skills/finishing-a-development-branch`<br>`.agents/skills/finishing-a-development-branch` |
+| **`receiving-code-review`** | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or tec... | `.claude/skills/receiving-code-review`<br>`.agents/skills/receiving-code-review` |
+| **`requesting-code-review`** | Use when completing tasks, implementing major features, or before merging to verify work meets requirements | `.claude/skills/requesting-code-review`<br>`.agents/skills/requesting-code-review` |
+| **`subagent-driven-development`** | Use when executing implementation plans with independent tasks in the current session | `.claude/skills/subagent-driven-development`<br>`.agents/skills/subagent-driven-development` |
+| **`systematic-debugging`** | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | `.claude/skills/systematic-debugging`<br>`.agents/skills/systematic-debugging` |
+| **`test-driven-development`** | Use when implementing any feature or bugfix, before writing implementation code | `.claude/skills/test-driven-development`<br>`.agents/skills/test-driven-development` |
+| **`using-git-worktrees`** | Use when starting feature work that needs isolation from current workspace or before executing implementation plans -... | `.claude/skills/using-git-worktrees`<br>`.agents/skills/using-git-worktrees` |
+| **`using-superpowers`** | Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY re... | `.claude/skills/using-superpowers`<br>`.agents/skills/using-superpowers` |
+| **`verification-before-completion`** | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running ver... | `.claude/skills/verification-before-completion`<br>`.agents/skills/verification-before-completion` |
+| **`writing-plans`** | Use when you have a spec or requirements for a multi-step task, before touching code | `.claude/skills/writing-plans`<br>`.agents/skills/writing-plans` |
+| **`writing-skills`** | Use when creating new skills, editing existing skills, or verifying skills work before deployment | `.claude/skills/writing-skills`<br>`.agents/skills/writing-skills` |
+
+### Pragmatic Anti-Overengineering (Ponytail) (5 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`ponytail`** | Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one rea... | `.claude/skills/ponytail`<br>`.agents/skills/ponytail` |
+| **`ponytail-audit`** | Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow path... | `.claude/skills/ponytail-audit`<br>`.agents/skills/ponytail-audit` |
+| **`ponytail-debt`** | List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report, changes nothing. Use f... | `.claude/skills/ponytail-debt`<br>`.agents/skills/ponytail-debt` |
+| **`ponytail-gain`** | Show ponytail's measured savings (code, cost, speed) from the benchmark. One-shot display. Use for /ponytail-gain, "w... | `.claude/skills/ponytail-gain`<br>`.agents/skills/ponytail-gain` |
+| **`ponytail-review`** | Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it... | `.claude/skills/ponytail-review`<br>`.agents/skills/ponytail-review` |
+
+### Design Engineering, Motion & Craft (16 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`animate`** | Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it... | `.claude/skills/animate`<br>`.agents/skills/animate` |
+| **`animate-expo`** | Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right ... | `.claude/skills/animate-expo`<br>`.agents/skills/animate-expo` |
+| **`animation-vocabulary`** | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the ... | `.claude/skills/animation-vocabulary`<br>`.agents/skills/animation-vocabulary` |
+| **`apple-design`** | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewi... | `.claude/skills/apple-design`<br>`.agents/skills/apple-design` |
+| **`ask-sonner`** | Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and ... | `.claude/skills/ask-sonner`<br>`.agents/skills/ask-sonner` |
+| **`design-taste-frontend`** | Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right de... | `.claude/skills/design-taste-frontend`<br>`.agents/skills/design-taste-frontend` |
+| **`design-website`** | Generate a premium mockup website for a prospect using the buildinamsterdam.com template style. Use when user asks to... | `.claude/skills/design-website`<br>`.agents/skills/design-website` |
+| **`emil-design-eng`** | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible ... | `.claude/skills/emil-design-eng`<br>`.agents/skills/emil-design-eng` |
+| **`find-animation-opportunities`** | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it... | `.claude/skills/find-animation-opportunities`<br>`.agents/skills/find-animation-opportunities` |
+| **`frontend-design`** | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aes... | `.claude/skills/frontend-design`<br>`.agents/skills/frontend-design` |
+| **`hallmark`** | Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots. Us... | `.claude/skills/hallmark`<br>`.agents/skills/hallmark` |
+| **`impeccable`** | Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adap... | `.claude/skills/impeccable`<br>`.agents/skills/impeccable` |
+| **`improve-animations`** | Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-c... | `.claude/skills/improve-animations`<br>`.agents/skills/improve-animations` |
+| **`pick-ui-library`** | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, comm... | `.claude/skills/pick-ui-library`<br>`.agents/skills/pick-ui-library` |
+| **`prototype`** | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can fl... | `.claude/skills/prototype`<br>`.agents/skills/prototype` |
+| **`review-animations`** | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy... | `.claude/skills/review-animations`<br>`.agents/skills/review-animations` |
+
+### Document Parsing & AST Knowledge Graphs (2 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`convert-documents-to-markdown`** | Convert Word (.doc, .docx), PowerPoint (.ppt, .pptx), Excel (.xls, .xlsx), OpenDocument (.odt, .ods, .odp), RTF, EPUB... | `.claude/skills/convert-documents-to-markdown`<br>`.agents/skills/convert-documents-to-markdown` |
+| **`graphify`** | any input (code, docs, papers, images) → knowledge graph → clustered communities → HTML + JSON + audit report | `.claude/skills/graphify`<br>`.agents/skills/graphify` |
+
+### Meta-Tooling, Evolution & Discovery (3 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`find-skills`** | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is... | `.claude/skills/find-skills`<br>`.agents/skills/find-skills` |
+| **`skill-creator`** | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a... | `.claude/skills/skill-creator`<br>`.agents/skills/skill-creator` |
+| **`task-observer`** | Monitors task execution for skill improvement opportunities. Use during ANY multi-step task, agentic workflow, or wor... | `.claude/skills/task-observer`<br>`.agents/skills/task-observer` |
+
+### Systems Craftsmanship & Testing (4 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`mcp-builder`** | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external servi... | `.claude/skills/mcp-builder`<br>`.agents/skills/mcp-builder` |
+| **`webapp-testing`** | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functio... | `.claude/skills/webapp-testing`<br>`.agents/skills/webapp-testing` |
+| **`write-swift`** | How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@c... | `.claude/skills/write-swift`<br>`.agents/skills/write-swift` |
+| **`writing-guidelines`** | Review docs/prose for Writing Guidelines compliance. Use when asked to "review my docs", "check writing style", "audi... | `.claude/skills/writing-guidelines`<br>`.agents/skills/writing-guidelines` |
+
+### Vercel, React & Performance (8 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`deploy-to-vercel`** | Deploy applications and websites to Vercel. Use when the user requests deployment actions like "deploy my app", "depl... | `.claude/skills/deploy-to-vercel`<br>`.agents/skills/deploy-to-vercel` |
+| **`vercel-cli-with-tokens`** | Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access ... | `.claude/skills/vercel-cli-with-tokens`<br>`.agents/skills/vercel-cli-with-tokens` |
+| **`vercel-composition-patterns`** | React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flex... | `.claude/skills/vercel-composition-patterns`<br>`.agents/skills/vercel-composition-patterns` |
+| **`vercel-optimize`** | Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limit... | `.claude/skills/vercel-optimize`<br>`.agents/skills/vercel-optimize` |
+| **`vercel-react-best-practices`** | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing... | `.claude/skills/vercel-react-best-practices`<br>`.agents/skills/vercel-react-best-practices` |
+| **`vercel-react-native-skills`** | React Native and Expo best practices for building performant mobile apps. Use when building React Native components, ... | `.claude/skills/vercel-react-native-skills`<br>`.agents/skills/vercel-react-native-skills` |
+| **`vercel-react-view-transitions`** | Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` compon... | `.claude/skills/vercel-react-view-transitions`<br>`.agents/skills/vercel-react-view-transitions` |
+| **`web-design-guidelines`** | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "aud... | `.claude/skills/web-design-guidelines`<br>`.agents/skills/web-design-guidelines` |
+
+### Persistent Memory System (Supabase) (4 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`memory-capture`** | Save important context to persistent memory for future sessions. PROACTIVELY USE THIS when you detect: - Decisions: "... | `.claude/skills/memory-capture`<br>`.agents/skills/memory-capture` |
+| **`memory-cloud-recall`** | Search cloud memory backup when local results are insufficient. Use when memory_search returns few/no results for a t... | `.claude/skills/memory-cloud-recall`<br>`.agents/skills/memory-cloud-recall` |
+| **`memory-session-end`** | Generate and save a session summary before ending conversation. IMPORTANT: Use this PROACTIVELY when: - User says "go... | `.claude/skills/memory-session-end`<br>`.agents/skills/memory-session-end` |
+| **`memory-session-start`** | Load relevant memories at session start for context continuity. IMPORTANT: Use this AUTOMATICALLY at the START of eve... | `.claude/skills/memory-session-start`<br>`.agents/skills/memory-session-start` |
+
+### Agency Business & Lead Generation (24 Skills)
+
+| Skill ID | Description | Cross-Agent Paths |
+|---|---|---|
+| **`add-webhook`** | Add new Modal webhooks for event-driven execution. Use when user asks to create a webhook, add an endpoint, or set up... | `.claude/skills/add-webhook`<br>`.agents/skills/add-webhook` |
+| **`casualize-names`** | Convert formal names to casual versions for cold email personalization - first names, company names, and city names. ... | `.claude/skills/casualize-names`<br>`.agents/skills/casualize-names` |
+| **`classify-leads`** | Classify leads using LLM for complex distinctions like product SaaS vs agencies. Use when user asks to classify leads... | `.claude/skills/classify-leads`<br>`.agents/skills/classify-leads` |
+| **`create-proposal`** | Generate PandaDoc proposals from client information or sales call transcripts. Use when user asks to create a proposa... | `.claude/skills/create-proposal`<br>`.agents/skills/create-proposal` |
+| **`cross-niche-outliers`** | Find viral YouTube videos from adjacent business niches to extract content patterns and hooks. Use when user asks to ... | `.claude/skills/cross-niche-outliers`<br>`.agents/skills/cross-niche-outliers` |
+| **`generate-report`** | Generate weekly weather reports for Canada using Open-Meteo API (free, no API key required) and PDF generation. Use w... | `.claude/skills/generate-report`<br>`.agents/skills/generate-report` |
+| **`gmail-inbox`** | Manage emails across multiple Gmail accounts with unified tooling. Use when user asks to check email, read inbox, lab... | `.claude/skills/gmail-inbox`<br>`.agents/skills/gmail-inbox` |
+| **`gmail-label`** | Auto-label Gmail emails into Action Required, Waiting On, and Reference categories. Use when user asks to label email... | `.claude/skills/gmail-label`<br>`.agents/skills/gmail-label` |
+| **`gmaps-leads`** | Scrape Google Maps for B2B leads with deep website enrichment and contact extraction. Use when user asks to find loca... | `.claude/skills/gmaps-leads`<br>`.agents/skills/gmaps-leads` |
+| **`instantly-autoreply`** | Auto-generate intelligent replies to incoming Instantly email threads using knowledge bases. Use when user asks about... | `.claude/skills/instantly-autoreply`<br>`.agents/skills/instantly-autoreply` |
+| **`instantly-campaigns`** | Create cold email campaigns in Instantly with A/B testing. Use when user asks to create email campaigns, set up cold ... | `.claude/skills/instantly-campaigns`<br>`.agents/skills/instantly-campaigns` |
+| **`local-server`** | Run Claude orchestrator locally with Cloudflare tunneling. Use when user asks to run locally, start local server, or ... | `.claude/skills/local-server`<br>`.agents/skills/local-server` |
+| **`modal-deploy`** | Deploy execution scripts to Modal cloud. Use when user asks to deploy to Modal, push code to cloud, or update Modal f... | `.claude/skills/modal-deploy`<br>`.agents/skills/modal-deploy` |
+| **`onboarding-kickoff`** | Automated client onboarding after kickoff call - generates leads, creates email campaigns, sets up auto-reply. Use wh... | `.claude/skills/onboarding-kickoff`<br>`.agents/skills/onboarding-kickoff` |
+| **`pan-3d-transition`** | Create 3D pan/swivel transition effects for videos using Remotion. Use when user asks to add 3D transitions, create s... | `.claude/skills/pan-3d-transition`<br>`.agents/skills/pan-3d-transition` |
+| **`recreate-thumbnails`** | Face-swap YouTube thumbnails to feature Your Name using AI. Use when user asks to recreate thumbnails, face swap imag... | `.claude/skills/recreate-thumbnails`<br>`.agents/skills/recreate-thumbnails` |
+| **`scrape-leads`** | Scrape and verify business leads using Apify, classify with LLM, enrich emails, and save to Google Sheets. Use when u... | `.claude/skills/scrape-leads`<br>`.agents/skills/scrape-leads` |
+| **`skool-monitor`** | Monitor and interact with Skool communities - read posts, create posts, reply to comments, like content, and search. ... | `.claude/skills/skool-monitor`<br>`.agents/skills/skool-monitor` |
+| **`skool-rag`** | Query Skool community content using RAG pipeline with vector search. Use when user asks to search Skool knowledge, fi... | `.claude/skills/skool-rag`<br>`.agents/skills/skool-rag` |
+| **`title-variants`** | Generate title variants for YouTube videos from outlier analysis. Use when user asks to create title variations, gene... | `.claude/skills/title-variants`<br>`.agents/skills/title-variants` |
+| **`upwork-apply`** | Scrape Upwork jobs and generate personalized proposals with cover letters. Use when user asks to find Upwork jobs, cr... | `.claude/skills/upwork-apply`<br>`.agents/skills/upwork-apply` |
+| **`video-edit`** | Edit talking-head videos by removing silences with neural VAD and adding 3D swivel teaser transitions. Use when user ... | `.claude/skills/video-edit`<br>`.agents/skills/video-edit` |
+| **`welcome-email`** | Send welcome email sequence to new clients. Use when user asks to send welcome emails, onboard new client with emails... | `.claude/skills/welcome-email`<br>`.agents/skills/welcome-email` |
+| **`youtube-outliers`** | Find viral YouTube videos in your niche for competitive intelligence. Use when user asks to find YouTube outliers, mo... | `.claude/skills/youtube-outliers`<br>`.agents/skills/youtube-outliers` |

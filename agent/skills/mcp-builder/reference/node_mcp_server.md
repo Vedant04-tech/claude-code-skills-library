@@ -1,4 +1,4 @@
-﻿# Node/TypeScript MCP Server Implementation Guide
+# Node/TypeScript MCP Server Implementation Guide
 
 ## Overview
 

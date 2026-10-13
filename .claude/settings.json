@@ -30,6 +30,11 @@
         "url": "https://registry.anthropic.com/alirezarezvani/claude-skills",
         "enabled": false,
         "note": "ML/MLOps skills; install via /plugin marketplace add alirezarezvani/claude-skills"
+      },
+      "thedotmack": {
+        "url": "https://registry.anthropic.com/thedotmack/claude-mem",
+        "enabled": false,
+        "note": "Local SQLite+Chroma vector memory plugin; optional alternative to vendor/claude-memory (Supabase)"
       }
     },
     "recommended": [
@@ -42,6 +47,11 @@
         "id": "claude-code-setup@claude-plugins-official",
         "command": "/plugin install claude-code-setup@claude-plugins-official",
         "description": "Project analysis and automated recommendations for custom skills and MCP servers"
+      },
+      {
+        "id": "claude-mem@thedotmack",
+        "command": "/plugin marketplace add thedotmack/claude-mem; /plugin install claude-mem",
+        "description": "Optional local-first SQLite/Chroma persistent memory layer (mutually exclusive with Supabase memory)"
       }
     ]
   },

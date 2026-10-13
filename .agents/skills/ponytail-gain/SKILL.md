@@ -1,4 +1,4 @@
-﻿---
+---
 name: ponytail-gain
 description: >
   Show ponytail's measured savings (code, cost, speed) from the benchmark.

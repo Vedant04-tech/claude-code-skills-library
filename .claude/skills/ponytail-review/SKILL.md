@@ -1,4 +1,4 @@
-﻿---
+---
 name: ponytail-review
 description: >
   Quality review of a change: is the logic right, is it safe, does it hold

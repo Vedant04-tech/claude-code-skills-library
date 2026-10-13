@@ -1,4 +1,4 @@
-﻿# MCP Server Evaluation Guide
+# MCP Server Evaluation Guide
 
 ## Overview
 

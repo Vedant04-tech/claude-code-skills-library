@@ -54,6 +54,19 @@ Registered in [`.claude/settings.json`](../.claude/settings.json):
 - **Capabilities:**
   - Generates conventional semantic git commit messages based on staged diffs.
 
+### 4. `claude-mem@thedotmack` (Optional Persistent Memory)
+- **Origin:** Community / Open Source (`thedotmack/claude-mem`)
+- **Installation Command:**
+  ```bash
+  /plugin marketplace add thedotmack/claude-mem
+  /plugin install claude-mem
+  ```
+- **Capabilities:**
+  - Local-first background capture of agent actions and decisions.
+  - Hybrid SQLite full-text search + Chroma vector retrieval.
+  - Progressive disclosure: injects relevant historical context without polluting token windows.
+  - **Coexistence Policy:** Mutually exclusive with `vendor/claude-memory` (Supabase). Do NOT run both simultaneously to avoid competing memory recalls.
+
 ---
 
 ## 🌐 Registered Plugin Marketplaces
@@ -63,6 +76,7 @@ Registered in [`.claude/settings.json`](../.claude/settings.json):
 | **`claude-plugins-official`** | `https://registry.anthropic.com/anthropics/claude-plugins-official` | Official Anthropic plugins repository | `true` |
 | **`anthropics`** | `https://registry.anthropic.com/anthropics/skills` | Official Anthropic skills collection | `true` |
 | **`superpowers`** | `https://registry.anthropic.com/obra/superpowers-marketplace` | Superpowers engineering discipline plugin | `true` |
+| **`thedotmack`** | `https://registry.anthropic.com/thedotmack/claude-mem` | Persistent SQLite/Chroma memory plugin | `false` (opt-in) |
 | **`vercel`** | `https://registry.anthropic.com/vercel-labs/agent-skills` | Vercel frontend design and React skills | `false` (installed locally) |
 | **`wshobson`** | `https://registry.anthropic.com/wshobson/agents` | Large developer and DevOps skills library | `false` (on-demand) |
 | **`alirezarezvani`** | `https://registry.anthropic.com/alirezarezvani/claude-skills` | Machine learning and MLOps skills library | `false` (on-demand) |

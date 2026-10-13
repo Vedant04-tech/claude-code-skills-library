@@ -2,22 +2,22 @@
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-6366f1?style=for-the-badge&logo=anthropic)](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 [![Antigravity](https://img.shields.io/badge/Antigravity-100%25%20Parity-4285f4?style=for-the-badge)](https://github.com/Vedant04-tech/claude-code-skills-library)
-[![Skills Count](https://img.shields.io/badge/Production%20Skills-81%20Verified-10b981?style=for-the-badge)](docs/skill-catalog.md)
+[![Skills Count](https://img.shields.io/badge/Production%20Skills-100%20Verified-10b981?style=for-the-badge)](docs/skill-catalog.md)
 [![Subagents](https://img.shields.io/badge/Specialized%20Subagents-4-f59e0b?style=for-the-badge)](https://github.com/Vedant04-tech/claude-code-skills-library)
-[![MCP Enabled](https://img.shields.io/badge/MCP%20Servers-5%20Bundled-8b5cf6?style=for-the-badge)](docs/plugin-catalog.md)
+[![MCP Enabled](https://img.shields.io/badge/MCP%20Servers-6%20Configured-8b5cf6?style=for-the-badge)](docs/plugin-catalog.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 > **A curated, battle-tested agency automation and engineering skills library with 100% parity across Claude Code, Google Antigravity, Cursor, and Codex.**
 
-This repository serves as a turnkey, production-ready engineering toolkit. Built and maintained for **Claude Code**, **Google Antigravity**, and **Agentic IDEs**, it packages **81 verified skills**, 4 high-focus subagents, 3 turnkey pipeline blueprints, 5 Model Context Protocol (MCP) servers, official Anthropic meta-skills, Jesse Vincent's Superpowers v6.1.1 discipline framework, Ponytail's anti-overengineering suite, AnyDoc document conversion, and Graphify's AST knowledge graph.
+This repository serves as a turnkey, production-ready engineering toolkit. Built and maintained for **Claude Code**, **Google Antigravity**, and **Agentic IDEs**, it packages **100 verified skills**, 4 high-focus subagents, 3 turnkey pipeline blueprints, 6 Model Context Protocol (MCP) servers, PeterHdd's Senior Engineering playbooks, Strix's autonomous application security suite, Agent Reach's multi-platform research router, official Anthropic meta-skills, Jesse Vincent's Superpowers v6.1.1 discipline framework, Ponytail's anti-overengineering suite, AnyDoc document conversion, and Graphify's AST knowledge graph.
 
 ---
 
 ## 📚 Core Documentation Indexes
 
-- 📖 **[Skills Catalog (81 Skills)](docs/skill-catalog.md)** — Exhaustive directory of all 81 skills with trigger phrases, upstream sources, and cross-agent compatibility.
-- 🔌 **[Plugins & MCP Servers Catalog](docs/plugin-catalog.md)** — Pre-configured MCP servers (`context7`, `playwright`, `filesystem`, `memory`, `fetch`, `headroom`), official Claude plugins (`code-review`, `claude-code-setup`), and marketplace registries.
-- 🗺️ **[Integration Roadmap](docs/integration-roadmap.md)** — Living tracker for phased upstream integrations (P0, P1, and P2 verified; P3 scheduled).
+- 📖 **[Skills Catalog (100 Skills)](docs/skill-catalog.md)** — Exhaustive directory of all 100 skills with trigger phrases, upstream sources, and cross-agent compatibility.
+- 🔌 **[Plugins & MCP Servers Catalog](docs/plugin-catalog.md)** — Pre-configured MCP servers (`context7`, `playwright`, `filesystem`, `memory`, `fetch`, `headroom`), official Claude plugins (`code-review`, `claude-code-setup`), memory plugins (`claude-mem`), and marketplace registries.
+- 🗺️ **[Integration Roadmap](docs/integration-roadmap.md)** — Living tracker for phased upstream integrations (P0, P1, P2, and P3 verified).
 - 🛡️ **[Security Review & Safeguards](docs/security-review.md)** — Application testing policies (Strix), web retrieval constraints, and memory privacy boundaries.
 - 📦 **[Skills Sources Tracking](docs/skill-sources.md)** — Category breakdown and upstream origin audits.
 
@@ -28,19 +28,22 @@ This repository serves as a turnkey, production-ready engineering toolkit. Built
 - [✨ Key Highlights](#-key-highlights)
 - [📂 Repository Architecture](#-repository-architecture)
 - [🚀 Quick Start](#-quick-start)
-- [🧠 Active Skills Directory (81 Verified)](#-active-skills-directory-81-verified)
-  - [1. Pragmatic Anti-Overengineering (Ponytail)](#1-pragmatic-anti-overengineering-ponytail)
-  - [2. Software Engineering Discipline (Superpowers v6.1.1)](#2-software-engineering-discipline-superpowers-v611)
-  - [3. Codebase Knowledge Graph & Document Parsing](#3-codebase-knowledge-graph--document-parsing)
-  - [4. Meta-Tooling, Discovery & Evolution](#4-meta-tooling-discovery--evolution)
-  - [5. Design Engineering, Animation & Craft UI](#5-design-engineering-animation--craft-ui)
-  - [6. B2B Lead Generation & Market Intelligence](#6-b2b-lead-generation--market-intelligence)
-  - [7. Cold Outreach & Email Automation](#7-cold-outreach--email-automation)
-  - [8. Sales, Proposals & Client Onboarding](#8-sales-proposals--client-onboarding)
-  - [9. Video Engineering & Content Intelligence](#9-video-engineering--content-intelligence)
-  - [10. Community Intelligence & Research](#10-community-intelligence--research)
-  - [11. Vercel, Next.js & Performance Optimization](#11-vercel-nextjs--performance-optimization)
-  - [12. Persistent Memory Architecture](#12-persistent-memory-architecture)
+- [🧠 Active Skills Directory (100 Verified)](#-active-skills-directory-100-verified)
+  - [1. Senior Engineering Playbooks (PeterHdd)](#1-senior-engineering-playbooks-peterhdd)
+  - [2. Autonomous Application Security & Pentesting (Strix)](#2-autonomous-application-security--pentesting-strix)
+  - [3. Universal Web Retrieval & Research (Agent Reach)](#3-universal-web-retrieval--research-agent-reach)
+  - [4. Pragmatic Anti-Overengineering (Ponytail)](#4-pragmatic-anti-overengineering-ponytail)
+  - [5. Software Engineering Discipline (Superpowers v6.1.1)](#5-software-engineering-discipline-superpowers-v611)
+  - [6. Codebase Knowledge Graph & Document Parsing](#6-codebase-knowledge-graph--document-parsing)
+  - [7. Meta-Tooling, Discovery & Evolution](#7-meta-tooling-discovery--evolution)
+  - [8. Design Engineering, Animation & Craft UI](#8-design-engineering-animation--craft-ui)
+  - [9. B2B Lead Generation & Market Intelligence](#9-b2b-lead-generation--market-intelligence)
+  - [10. Cold Outreach & Email Automation](#10-cold-outreach--email-automation)
+  - [11. Sales, Proposals & Client Onboarding](#11-sales-proposals--client-onboarding)
+  - [12. Video Engineering & Content Intelligence](#12-video-engineering--content-intelligence)
+  - [13. Community Intelligence & Research](#13-community-intelligence--research)
+  - [14. Vercel, Next.js & Performance Optimization](#14-vercel-nextjs--performance-optimization)
+  - [15. Persistent Memory Architecture](#15-persistent-memory-architecture)
 - [🤖 Autonomous Subagents](#-autonomous-subagents)
 - [📋 Turnkey Workflow Blueprints](#-turnkey-workflow-blueprints)
 - [🔌 MCP Servers Suite](#-mcp-servers-suite)
@@ -51,7 +54,10 @@ This repository serves as a turnkey, production-ready engineering toolkit. Built
 
 ## ✨ Key Highlights
 
-- **⚡ 100% Cross-Agent Parity**: Skills are mirrored across `.claude/skills/`, `.agents/skills/`, and `agent/skills/`, ensuring that **Google Antigravity**, **Claude Code**, **Cursor**, and **Codex** discover all 81 skills natively.
+- **⚡ 100% Cross-Agent Parity**: Skills are mirrored across `.claude/skills/`, `.agents/skills/`, and `agent/skills/`, ensuring that **Google Antigravity**, **Claude Code**, **Cursor**, and **Codex** discover all 100 skills natively.
+- **🏗️ Senior Engineering Playbooks**: Integrated **PeterHdd** domain engineering skills (`engineering-senior-developer`, `engineering-system-designer`, `engineering-backend-architect`, `engineering-devops-automator`, etc.) with executable review checklists and architectural decision records.
+- **🛡️ Autonomous Security & Penetration Testing**: Integrated **Strix** suite (`penetration-testing-with-strix`, `find-security-vulnerabilities-in-code`, `owasp-top-10-testing`, etc.) featuring real exploit validation, proof-of-concepts, and strict Docker sandbox isolation.
+- **🌐 Universal Web Retrieval**: Integrated **Agent Reach** (`agent-reach`) routing queries across 15+ services (GitHub, Reddit, Twitter, YouTube, Jina Reader, Exa, V2EX) with polite rate-limiting.
 - **🧘 Pragmatic Anti-Overengineering**: Integrated **Ponytail** decision ladder ("The best code is the code you never wrote") to cut token waste and eliminate unneeded dependencies.
 - **📄 Universal Document Parsing**: Integrated **AnyDoc** (`convert-documents-to-markdown`) to convert Word, Excel, PowerPoint, EPUB, and PDFs directly into LLM-ready Markdown.
 - **🕸️ Local Codebase Knowledge Graph**: Integrated **Graphify** for deterministic Tree-sitter AST structural mapping, producing interactive HTML graphs and GraphRAG JSON without external API dependencies.
@@ -68,21 +74,21 @@ This repository serves as a turnkey, production-ready engineering toolkit. Built
 ```
 .
 ├── .claude/
-│   ├── skills/                  # 81 active agent skills (auto-discovered by Claude Code)
+│   ├── skills/                  # 100 active agent skills (auto-discovered by Claude Code)
 │   ├── agents/                  # 4 specialized subagents
 │   │   ├── code-reviewer.md     # Zero-context code review
 │   │   ├── qa.md                # Edge-case test generation & execution
 │   │   ├── research.md          # Multi-source deep research
 │   │   └── email-classifier.md  # High-volume Gmail triage
 │   └── settings.json            # Plugin marketplace & MCP server config
-├── .agents/skills/              # 81 skills mirrored for Google Antigravity & Agent standards
-├── agent/skills/                # 81 skills mirrored for CLI and alternative runners
+├── .agents/skills/              # 100 skills mirrored for Google Antigravity & Agent standards
+├── agent/skills/                # 100 skills mirrored for CLI and alternative runners
 ├── prompts/                     # 3 production workflow blueprints
 │   ├── gmaps_lead_pipeline_builder.md
 │   ├── upwork_pipeline_builder.md
 │   └── instantly_campaign_creator.md
 ├── docs/                        # Complete technical documentation
-│   ├── skill-catalog.md         # 81-skill directory with trigger phrases
+│   ├── skill-catalog.md         # 100-skill directory with trigger phrases
 │   ├── plugin-catalog.md        # MCP servers and Claude plugins
 │   ├── integration-roadmap.md   # Phased rollout and upstream tracking
 │   ├── security-review.md       # Guardrails, Strix policy, and data hygiene
@@ -138,11 +144,42 @@ npm install
 
 ---
 
-## 🧠 Active Skills Directory (81 Verified)
+## 🧠 Active Skills Directory (100 Verified)
 
-*(See [`docs/skill-catalog.md`](docs/skill-catalog.md) for the full 81-skill index).*
+*(See [`docs/skill-catalog.md`](docs/skill-catalog.md) for the full 100-skill index).*
 
-### 1. Pragmatic Anti-Overengineering (Ponytail)
+### 1. Senior Engineering Playbooks (PeterHdd)
+| Skill | Trigger / Use Case | Description |
+|---|---|---|
+| [`engineering-senior-developer`](.claude/skills/engineering-senior-developer) | *"Lead implementation", "senior engineering judgment"* | Architecture tradeoffs, review checklist (`scripts/review_checklist.py`), production rollout, and delivery discipline. |
+| [`engineering-system-designer`](.claude/skills/engineering-system-designer) | *"Design distributed system", "ADR", "scalability"* | Component diagrams, capacity planning, database sharding, and architecture decision records. |
+| [`engineering-backend-architect`](.claude/skills/engineering-backend-architect) | *"Design database schema", "sub-20ms queries", "API contract"* | Database indexing, WebSocket streaming, event-driven architecture, and caching tiers. |
+| [`engineering-devops-automator`](.claude/skills/engineering-devops-automator) | *"Setup Terraform", "CI/CD pipeline", "canary deploy"* | Infrastructure-as-code, Docker containerization, monitoring, alerting, and secrets management. |
+| [`engineering-frontend-developer`](.claude/skills/engineering-frontend-developer) | *"Build component library", "Core Web Vitals"* | Modern React/Vue/Svelte architecture, code splitting, accessibility, and UI performance. |
+| [`engineering-ml-engineer`](.claude/skills/engineering-ml-engineer) | *"Fine-tune model", "LoRA/QLoRA", "RAG pipeline"* | PyTorch and HuggingFace workflows, text classification, embeddings, quantization, and evaluation. |
+| [`engineering-mobile-app-builder`](.claude/skills/engineering-mobile-app-builder) | *"Build mobile app", "SwiftUI", "Jetpack Compose"* | Native and cross-platform mobile patterns, offline-first sync, biometrics, and push notifications. |
+| [`engineering-rapid-prototyper`](.claude/skills/engineering-rapid-prototyper) | *"Build MVP fast", "prototype idea"* | Maximum speed proof-of-concept development, BaaS integration, and quick hypothesis validation. |
+| [`engineering-security-engineer`](.claude/skills/engineering-security-engineer) | *"Threat modeling", "STRIDE", "security review"* | OWASP Top 10 remediation, threat modeling, dependency vulnerability scanning, and security headers. |
+
+### 2. Autonomous Application Security & Pentesting (Strix)
+| Skill | Trigger / Use Case | Description |
+|---|---|---|
+| [`penetration-testing-with-strix`](.claude/skills/penetration-testing-with-strix) | *"Pentest this app", "security audit"* | Autonomous penetration testing with validated exploit proof-of-concepts (Docker sandboxed). |
+| [`find-security-vulnerabilities-in-code`](.claude/skills/find-security-vulnerabilities-in-code) | *"Security scan repo", "code vulnerability review"* | White-box source review reasoning about data flows and live sandboxed exploit confirmation. |
+| [`owasp-top-10-testing`](.claude/skills/owasp-top-10-testing) | *"OWASP Top 10 assessment"* | Systematic exploitation and validation of OWASP Top 10:2025 vulnerability categories. |
+| [`api-security-testing`](.claude/skills/api-security-testing) | *"Test API security", "BOLA/IDOR scan"* | OWASP API Security Top 10 testing across REST, GraphQL, and gRPC endpoints. |
+| [`application-security-testing`](.claude/skills/application-security-testing) | *"AppSec assessment", "pre-launch security review"* | Cross-stack security review generating ranked remediation plans based on proven reachability. |
+| [`ci-security-scanning-with-strix`](.claude/skills/ci-security-scanning-with-strix) | *"Add security scan to CI", "PR security check"* | Pre-merge security gates for GitHub Actions with diff-scoped pentesting and SARIF export. |
+| [`fix-security-vulnerabilities-with-strix`](.claude/skills/fix-security-vulnerabilities-with-strix) | *"Patch vulnerabilities", "verify fix"* | Root-cause vulnerability remediation with automatic verification re-scans. |
+| [`managed-pentesting-with-strix`](.claude/skills/managed-pentesting-with-strix) | *"Run managed cloud pentest"* | Managed continuous testing via `strix cloud` CLI and app.strix.ai platform. |
+| [`web-app-penetration-testing`](.claude/skills/web-app-penetration-testing) | *"Test web app", "staging pentest"* | Black-box live website and staging environment vulnerability assessment. |
+
+### 3. Universal Web Retrieval & Research (Agent Reach)
+| Skill | Trigger / Use Case | Description |
+|---|---|---|
+| [`agent-reach`](.claude/skills/agent-reach) | *"Search internet", "research across platforms", "look up URL"* | Multi-platform content router across 15+ services (GitHub, Reddit, Twitter, YouTube, Exa, V2EX). |
+
+### 4. Pragmatic Anti-Overengineering (Ponytail)
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`ponytail`](.claude/skills/ponytail) | *"Be lazy", "simplest solution", "yagni"* | Enforces decision ladder: smallest change that solves the task, zero unnecessary packages. |
@@ -151,7 +188,7 @@ npm install
 | [`ponytail-debt`](.claude/skills/ponytail-debt) | *"Harvest tech debt"* | Collects deferred shortcut comments into an actionable ledger. |
 | [`ponytail-gain`](.claude/skills/ponytail-gain) | *"Check code reduction"* | Displays a scoreboard tracking lines of code saved and speed improvements. |
 
-### 2. Software Engineering Discipline (Superpowers v6.1.1)
+### 5. Software Engineering Discipline (Superpowers v6.1.1)
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`test-driven-development`](.claude/skills/test-driven-development) | *"Write tests first"* | Enforces strict TDD discipline: red, green, refactor cycle before writing code. |
@@ -169,14 +206,14 @@ npm install
 | [`using-superpowers`](.claude/skills/using-superpowers) | *"Start session"* | Establishes how to find and use skills before responding. |
 | [`writing-skills`](.claude/skills/writing-skills) | *"Author a skill"* | Guides authoring and verifying skills before deployment. |
 
-### 3. Codebase Knowledge Graph & Document Parsing
+### 6. Codebase Knowledge Graph & Document Parsing
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`graphify`](.claude/skills/graphify) | *"/graphify", "map codebase"* | Converts repository into a Tree-sitter AST knowledge graph with HTML visualizer. |
 | [`convert-documents-to-markdown`](.claude/skills/convert-documents-to-markdown) | *"Convert docx, pptx, xlsx, pdf"* | AnyDoc CLI parser converting Office docs, sheets, presentations, and PDFs to Markdown. |
 | [`literature-research`](.claude/skills/literature-research) | *"Research papers"* | Queries scientific databases (PubMed/arXiv) and synthesizes literature reviews. |
 
-### 4. Meta-Tooling, Discovery & Evolution
+### 7. Meta-Tooling, Discovery & Evolution
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`skill-creator`](.claude/skills/skill-creator) | *"Create a new skill"* | Official Anthropic framework for authoring, evaluating, and benchmarking skills. |
@@ -185,7 +222,7 @@ npm install
 | [`mcp-builder`](.claude/skills/mcp-builder) | *"Build an MCP server"* | Complete engineering guide for creating FastMCP and Node MCP SDK servers. |
 | [`webapp-testing`](.claude/skills/webapp-testing) | *"Test web application"* | Playwright UI test harness with `with_server.py` lifecycle runner. |
 
-### 5. Design Engineering, Animation & Craft UI
+### 8. Design Engineering, Animation & Craft UI
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`design-taste-frontend`](.claude/skills/design-taste-frontend) | *"Design non-slop landing page"* | Taste Skill: strict anti-slop rules, design intensity dials, and OKLCH palettes. |
@@ -203,7 +240,7 @@ npm install
 | [`improve-animations`](.claude/skills/improve-animations) | *"Refine abrupt animation"* | Tunes abrupt linear movements into natural, physics-governed spring animations. |
 | [`review-animations`](.claude/skills/review-animations) | *"Audit motion performance"* | Flags layout thrashing, non-composited properties, and frame jank. |
 
-### 6. B2B Lead Generation & Market Intelligence
+### 9. B2B Lead Generation & Market Intelligence
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`scrape-leads`](.claude/skills/scrape-leads) | *"Scrape SaaS leads"* | Apify lead scraping, LLM classification, email enrichment, and Sheets export. |
@@ -211,7 +248,7 @@ npm install
 | [`classify-leads`](.claude/skills/classify-leads) | *"Qualify leads"* | LLM-based lead scoring and ICP categorization in Google Sheets. |
 | [`casualize-names`](.claude/skills/casualize-names) | *"Clean first names"* | Converts formal names to natural conversational outreach names. |
 
-### 7. Cold Outreach & Email Automation
+### 10. Cold Outreach & Email Automation
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`instantly-campaigns`](.claude/skills/instantly-campaigns) | *"Create cold campaign"* | 3-step sequence campaigns in Instantly with multi-angle A/B test variants. |
@@ -220,14 +257,14 @@ npm install
 | [`gmail-inbox`](.claude/skills/gmail-inbox) | *"Triage emails"* | Multi-account unified Gmail inbox triage. |
 | [`gmail-label`](.claude/skills/gmail-label) | *"Label inbox"* | Rules-based Gmail labeling and folder filtering workflows. |
 
-### 8. Sales, Proposals & Client Onboarding
+### 11. Sales, Proposals & Client Onboarding
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`create-proposal`](.claude/skills/create-proposal) | *"Build proposal"* | Generates PandaDoc proposals dynamically using Sheets pricing & scope data. |
 | [`upwork-apply`](.claude/skills/upwork-apply) | *"Write Upwork bid"* | Scrapes Upwork listings and tailors high-converting cover letters and bids. |
 | [`onboarding-kickoff`](.claude/skills/onboarding-kickoff) | *"Kickoff client"* | Orchestrates project workspaces, document templates, and initial tasks. |
 
-### 9. Video Engineering & Content Intelligence
+### 12. Video Engineering & Content Intelligence
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`video-edit`](.claude/skills/video-edit) | *"Edit video silences"* | Neural Voice Activity Detection (VAD) to trim dead air and stitch jump cuts. |
@@ -237,13 +274,13 @@ npm install
 | [`cross-niche-outliers`](.claude/skills/cross-niche-outliers) | *"Cross-niche viral angles"* | Discovers breakout video angles from adjacent industries for adaptation. |
 | [`title-variants`](.claude/skills/title-variants) | *"Generate YouTube titles"* | High-CTR title variations engineered around curiosity gaps and tension hooks. |
 
-### 10. Community Intelligence & Research
+### 13. Community Intelligence & Research
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`skool-monitor`](.claude/skills/skool-monitor) | *"Monitor Skool community"* | Tracks member posts, unanswered questions, and engagement velocity. |
 | [`skool-rag`](.claude/skills/skool-rag) | *"Search Skool knowledge"* | Semantic vector search across historical community threads and masterminds. |
 
-### 11. Vercel, Next.js & Performance Optimization
+### 14. Vercel, Next.js & Performance Optimization
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`vercel-react-best-practices`](.claude/skills/vercel-react-best-practices) | *"Optimize React rendering"* | Vercel Engineering rules for Server Components, memoization, and waterfalls. |
@@ -254,7 +291,7 @@ npm install
 | [`vercel-react-view-transitions`](.claude/skills/vercel-react-view-transitions) | *"Implement view transitions"* | Native React View Transition API (`<ViewTransition>`) without bulky libraries. |
 | [`vercel-react-native-skills`](.claude/skills/vercel-react-native-skills) | *"Cross-platform React"* | Shared architectural patterns between web and React Native codebases. |
 
-### 12. Persistent Memory Architecture
+### 15. Persistent Memory Architecture
 | Skill | Trigger / Use Case | Description |
 |---|---|---|
 | [`memory-capture`](.claude/skills/memory-capture) | *"Save architecture decision"* | Records technical insights and conventions into vector memory during sessions. |

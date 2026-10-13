@@ -1,4 +1,4 @@
-﻿# MCP Server Best Practices
+# MCP Server Best Practices
 
 ## Quick Reference
 
