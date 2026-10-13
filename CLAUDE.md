@@ -16,8 +16,7 @@
 
 1. **Clone and install dependencies:**
    ```bash
-   cd "Claude Skills Demo"
-   pip install -r requirements.txt
+   cd claude-code-skills-library
    npm install
    ```
 
